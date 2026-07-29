@@ -9,10 +9,10 @@ const otherLinks = ['Offering', 'Resources', 'News & Updates'];
 
 export function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-ink text-cream">
-      <div className="container-wide relative px-8 sm:px-20 lg:px-[203px] py-12 lg:pt-[111px]">
+    <footer className="relative overflow-hidden bg-ink text-cream mt-8">
+      <div className="container-wide relative py-20 lg:py-24 xl:py-28 lg:px-12 xl:px-16">
         <div className="reveal grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-0">
-          <div className="lg:col-span-6">
+          <div className="md:col-span-6">
             <h2 className="max-w-[360px] pl-0 text-[30px] font-medium leading-[34px] tracking-[-0.36px] sm:text-4xl sm:leading-[44px]">         
               <span className="lg:pl-[52px] xl:pl-[60px]">There is still a </span><br />
               <span className=""> room for you too</span>
@@ -25,12 +25,12 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="flex lg:justify-end lg:col-span-6">
-            <img src={footerLogo} alt="footer-logo" className=""/>
+          <div className="flex lg:justify-end md:col-span-6">
+            <img src={footerLogo} alt="footer-logo" className="h-auto object-cover w-[120px] sm:w-[140px] md:w-[160px] lg:w-[auto]"/>
           </div>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 border-t border-cream/20 lg:mt-[84px] lg:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 border-t border-cream/20 lg:mt-[84px] sm:grid-cols-2 lg:grid-cols-3">
           <section className="border-b border-cream/20 py-12 lg:border-b-0 lg:border-r lg:pr-20">
             <h3 className="text-sm font-normal leading-4 opacity-40">
               Navigation
@@ -88,7 +88,7 @@ export function Footer() {
 
         <div className="flex flex-col gap-3 border-t border-cream/20 pt-10 text-xs leading-6 lg:flex-row lg:items-center lg:justify-between">
           <p>© 2026 Oude Vismijn 1 — Lokeren</p>
-          <p className="flex justify-center gap-2 flex-wrap">
+          <p className="flex justify-start lg:justify-center gap-2 flex-wrap">
             <a href="#" className="hover:opacity-60" target="_blank">Facebook</a> |
             <a href="#" className="hover:opacity-60" target="_blank">Instagram</a> |
             <a href="#" className="hover:opacity-60" target="_blank">LinkedIn</a>

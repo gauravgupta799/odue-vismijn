@@ -15,8 +15,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="container-wide relative grid grid-cols-1 gap-8 px-8 py-10 sm:px-20 lg:grid-cols-12 lg:gap-0 lg:px-[203px] lg:py-[138px]"
-    >
+      className="container-wide lg:px-12 xl:px-16 relative grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-0 py-20 sm:py-24 md:py-28 lg:py-32 xl:py-36">
       <div className="reveal col-span-1 lg:col-span-7">
         <h2 className="max-w-[590px] pl-0 text-[30px] font-medium leading-[34px] tracking-[-0.36px] sm:text-4xl sm:leading-[44px] lg:pl-20">
           <span className="lg:pl-[36px]">From AI evenings to chair </span>

@@ -31,7 +31,7 @@ export function Gallery() {
 
   return (
     <>
-      <section className="container-wide px-8 py-10 sm:px-20 lg:px-[203px] lg:py-[116px]">
+      <section className="container-wide py-20 lg:py-24 xl:py-28 lg:px-12 xl:px-16">
         <div className="reveal grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-0">
           <h2 className="col-span-1 text-[48px] font-medium leading-none tracking-[-0.64px] sm:text-[64px] lg:col-span-7">
             Gallery

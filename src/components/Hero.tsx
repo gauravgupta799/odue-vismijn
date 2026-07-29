@@ -10,9 +10,9 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="container-wide grid grid-cols-1 gap-7 px-8 pb-6 pt-7 sm:px-20 lg:grid-cols-12 lg:gap-0 lg:px-[203px] lg:pb-[97px] lg:pt-[103px]"
+      className="container-wide grid grid-cols-1 gap-7 lg:px-12 xl:px-16 pb-6 pt-8 lg:grid-cols-12 lg:gap-0 lg:py-[96px]"
     >
-      <h1 className="reveal col-span-1 max-w-[404px] text-[30px] font-medium leading-[31px] tracking-[-0.44px] sm:text-[44px] sm:leading-[48px] lg:col-span-6">
+      <h1 className="reveal col-span-1 max-w-[404px] text-[30px] leading-[31px] tracking-[-0.44px] sm:text-[44px] sm:leading-[48px] lg:col-span-6">
         Space For People Who Want To Make A Difference.
       </h1>
       <div className="reveal flex items-start gap-3 self-end lg:col-span-4 lg:col-start-9 lg:mb-1">

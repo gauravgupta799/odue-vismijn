@@ -30,7 +30,7 @@ export function Header() {
           : 'bg-transparent',
       )}
     >
-      <div className="container-wide flex items-center justify-between px-4 py-3 sm:px-12 lg:px-[60px] lg:py-[38px]">
+      <div className="container-wide flex items-center justify-between py-3">
         <nav aria-label="Primary" className="hidden md:block">
           <ul className="flex gap-6 text-xs sm:text-sm">
             {navLinks.map((link) => (
@@ -45,11 +45,10 @@ export function Header() {
             ))}
           </ul>
         </nav>
-
         <a
           href="#home"
           aria-label="Oude Vismijn 1 home"
-          className="mx-3 shrink-0"
+          className="shrink-0"
         >
           <Logo/>
         </a>
@@ -78,24 +77,26 @@ export function Header() {
       </div>
 
       {menuOpen && (
-        <div className="border-t border-ink/10 bg-cream px-6 py-6 md:hidden">
-          <nav aria-label="Mobile">
-            <ul className="flex flex-col gap-4 text-base">
-              {navLinks.map((link) => (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    onClick={() => setMenuOpen(false)}
-                    className="block py-1"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-          <div className="mt-6">
-            <ActionButton dark>Be A Part</ActionButton>
+        <div className="container-wide">
+          <div className="border-t border-ink/10 bg-cream py-6 md:hidden">
+            <nav aria-label="Mobile">
+              <ul className="flex flex-col gap-4 text-base">
+                {navLinks.map((link) => (
+                  <li key={link.href}>
+                    <a
+                      href={link.href}
+                      onClick={() => setMenuOpen(false)}
+                      className="block py-1"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+            <div className="mt-6">
+              <ActionButton>Be A Part</ActionButton>
+            </div>
           </div>
         </div>
       )}
@@ -105,8 +106,8 @@ export function Header() {
 
 function Logo() {
   return (
-    <span className="block font-display text-lg font-medium tracking-tight sm:text-2xl lg:text-3xl">
-      <img src={siteLogo} alt="logo" className="" />
+    <span className="tracking-tight">
+      <img src={siteLogo} alt="oude-vismijn-logo" className="w-auto" />
     </span>
   );
 }

@@ -11,7 +11,7 @@ const steps = [
 
 export function Steps() {
   return (
-    <section className="container-wide grid grid-cols-1 gap-8 px-8 py-12 sm:px-20 lg:grid-cols-12 lg:gap-0 lg:px-[60px] lg:py-[134px]">
+    <section className="container-wide grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-0 py-20 sm:py-24 md:py-28 lg:py-32 xl:py-36 lg:px-12 xl:px-16">
       <div className="reveal col-span-1 lg:col-span-7">
         <h2 className="mx-auto max-w-[471px] text-center text-[30px] font-medium leading-[34px] tracking-[-0.36px] sm:text-4xl sm:leading-[44px]">
           <span>Starting here is</span> <br /> 

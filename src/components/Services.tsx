@@ -27,9 +27,9 @@ export function Services() {
   return (
     <section
       id="services"
-      className="bg-ink pb-10 pt-12 text-cream lg:pb-[108px] lg:pt-[108px]"
+      className="bg-ink pb-10 pt-12 text-cream py-20 lg:py-24 lg:px-12 xl:px-16"
     >
-      <div className="container-wide px-8 sm:px-20 lg:px-[203px]">
+      <div className="container-wide  lg:px-16 xl:px-20">
         <div className="reveal mx-auto max-w-[502px]">
           <h2 className="pl-0 text-[30px] font-medium leading-[34px] tracking-[-0.36px] sm:text-4xl sm:leading-[44px] ">
             <span className="lg:pl-[36px]">From AI evenings to chair </span>
