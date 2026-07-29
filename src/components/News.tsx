@@ -1,4 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card';
+import newsImage from "@/assets/blog-1.png";
 
 const description =
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Fusce vehicula, justo';
@@ -6,17 +7,17 @@ const description =
 const newsItems = [
   {
     title: 'Podcast Vismijn — new episode live',
-    image: 'https://images.pexels.com/photos/31213674/pexels-photo-31213674.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: `${newsImage}`,
     date: 'JUNE 2025',
   },
   {
     title: 'Podcast Vismijn — new episode live',
-    image: 'https://images.pexels.com/photos/270288/pexels-photo-270288.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: `${newsImage}`,
     date: 'JUNE 2025',
   },
   {
     title: 'Welcome — a new starter has arrived',
-    image: 'https://images.pexels.com/photos/6476255/pexels-photo-6476255.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: `${newsImage}`,
     date: 'JUNE 2025',
   },
 ];
@@ -48,9 +49,11 @@ export function News() {
               <p className="mt-4 font-instrument text-xs leading-6">
                 {item.date}
               </p>
-              <h3 className="mt-1 text-xl font-normal leading-7">
-                {item.title}
-              </h3>
+              <p className="mt-1 text-xl font-normal leading-7">
+                <a href="#" className="hover:text-black hover:underline">
+                  {item.title}
+                </a>
+              </p>
             </CardContent>
           </Card>
         ))}

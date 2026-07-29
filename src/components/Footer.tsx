@@ -25,7 +25,7 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="flex justify-lg-end lg:col-span-6">
+          <div className="flex lg:justify-end lg:col-span-6">
             <img src={footerLogo} alt="footer-logo" className=""/>
           </div>
         </div>
@@ -88,7 +88,11 @@ export function Footer() {
 
         <div className="flex flex-col gap-3 border-t border-cream/20 pt-10 text-xs leading-6 lg:flex-row lg:items-center lg:justify-between">
           <p>© 2026 Oude Vismijn 1 — Lokeren</p>
-          <p>Facebook | Instagram | Linkedin</p>
+          <p className="flex justify-center gap-2 flex-wrap">
+            <a href="#" className="hover:opacity-60" target="_blank">Facebook</a> |
+            <a href="#" className="hover:opacity-60" target="_blank">Instagram</a> |
+            <a href="#" className="hover:opacity-60" target="_blank">LinkedIn</a>
+            </p>
           <p>A place that makes sense</p>
         </div>
       </div>

@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { ActionButton } from '@/components/ActionButton';
+import galleryImg1 from "@/assets/home-banner.png"
 
 const galleryImages = [
   {
-    src: 'https://images.pexels.com/photos/7495291/pexels-photo-7495291.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    // src: 'https://images.pexels.com/photos/7495291/pexels-photo-7495291.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    src:`${galleryImg1 }`,
     alt: 'Professionals in a collaborative meeting',
   },
   {
@@ -55,7 +57,7 @@ export function Gallery() {
               alt={img.alt}
               className={`w-full object-cover transition-opacity duration-700 ${
                 i === active
-                  ? 'block h-auto lg:h-[414px]'
+                  ? 'block h-auto lg:h-[480px]'
                   : 'absolute inset-0 hidden'
               }`}
               loading="lazy"
@@ -72,7 +74,7 @@ export function Gallery() {
               type="button"
               aria-label="Previous image"
               onClick={() => go(-1)}
-              className="flex h-11 w-11 items-center justify-center border border-white/40 text-white backdrop-blur-sm transition-colors hover:bg-white hover:text-ink"
+              className="flex h-12 w-12 items-center justify-center border border-white/60 text-white backdrop-blur-sm transition-colors hover:bg-white hover:text-ink"
             >
               <ChevronLeft className="h-5 w-5" strokeWidth={1.5} />
             </button>
@@ -80,7 +82,7 @@ export function Gallery() {
               type="button"
               aria-label="Next image"
               onClick={() => go(1)}
-              className="flex h-11 w-11 items-center justify-center border border-white/40 text-white backdrop-blur-sm transition-colors hover:bg-white hover:text-ink"
+              className="flex h-12 w-12 items-center justify-center border border-white/60 text-white backdrop-blur-sm transition-colors hover:bg-white hover:text-ink"
             >
               <ChevronRight className="h-5 w-5" strokeWidth={1.5} />
             </button>
