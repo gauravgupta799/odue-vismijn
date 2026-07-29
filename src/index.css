@@ -1,0 +1,93 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital@0;1&display=swap');
+@import url('https://fonts.gstatic.com/s/geist/v1/GEIST-wght.woff2'); */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* @font-face {
+    font-family: 'Geist';
+    src: url('https://fonts.gstatic.com/s/geist/v1/GEIST-wght.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  } */
+
+  @font-face {
+    font-family: "Geist-Regular";
+    src:
+      url("./assets/fonts/Geist-Regular.woff2") format("woff2"),
+      url("./assets/fonts/Geist-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Geist-Medium";
+    src:
+      url("./assets/fonts/Geist-Medium.woff2") format("woff2"),
+      url("./assets/fonts/Geist-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-cream text-ink;
+    /* font-feature-settings: 'ss01', 'cv11'; */
+    font-family: "Geist-Regular", sans-serif;
+    font-weight: 400;
+  }
+
+  h1, h2, h3, h4 , h5, h6{
+    font-family: "Geist-Medium", sans-serif;
+    font-weight: 500;
+  }
+
+  p{
+    font-size:16px;
+    line-height: 1.35;
+  }
+
+  ::selection {
+    @apply bg-ink text-cream;
+  }
+
+  *:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-6 sm:px-12 lg:px-[60px];
+  }
+
+  .container-wide {
+    @apply mx-auto max-w-[1440px];
+  }
+
+  /* Reusable fade-up trigger — paired with IntersectionObserver */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
