@@ -24,10 +24,10 @@ const newsItems = [
 
 export function News() {
   return (
-    <section className="container-wide py-20 sm:py-24 md:py-28 lg:py-32 xl:py-36 lg:px-12 xl:px-16">
-      <div className="reveal mx-auto max-w-[648px]">
+    <section className="container-wide py-20 sm:py-24 md:py-28 lg:py-32 xl:py-36">
+      <div className="reveal mx-auto max-w-[462px]">
         <h2 className="text-[30px] font-medium leading-[34px] tracking-[-0.36px] sm:text-4xl sm:leading-[44px]">
-          <span className="lg:pl-[52px] xl:pl-[64px]"> Wat gebeurt er op Oude Vismijn 1?</span>
+          <span className="lg:pl-[52px] xl:pl-[64px]"> Wat gebeurt er op Oude Vismijn 1? </span>
           <span className="">at Oude Vismijn 1</span>
         </h2>
         <p className="mt-3 max-w-[460px] text-[14px] leading-4">{description}</p>

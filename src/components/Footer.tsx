@@ -13,7 +13,7 @@ export function Footer() {
       <div className="container-wide relative py-20 lg:py-24 xl:py-28 lg:px-12 xl:px-16">
         <div className="reveal grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-0">
           <div className="md:col-span-6">
-            <h2 className="max-w-[360px] pl-0 text-[30px] font-medium leading-[34px] tracking-[-0.36px] sm:text-4xl sm:leading-[44px]">         
+            <h2 className="max-w-[460px] pl-0 text-[30px] font-medium leading-[34px] tracking-[-0.36px] sm:text-4xl sm:leading-[44px]">         
               <span className="lg:pl-[52px] xl:pl-[60px]">Wil jij hier iets starten?</span>
               {/* <span className=""> room for you too</span> */}
             </h2>
