@@ -59,7 +59,7 @@ export function Services() {
             {/* <span>massage. From podcast recordings to social
             change.</span> */}
           </h2>
-          <p className="mt-5 max-w-[427px] text-sm leading-4">
+          <p className="mt-5 max-w-[427px] text-sm leading-5">
             Van AI en educatie tot podcasts, welzijn en maatschappelijke impact. Ontdek de projecten die groeien vanuit Oude Vismijn 1.
           </p>
         </div>

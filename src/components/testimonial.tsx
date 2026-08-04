@@ -17,14 +17,14 @@ const TestimonialSection = () => {
 
                     <div className="mt-14 flex items-center justify-between">
                     <p className="text-sm text-neutral-700 sm:text-base">
-                        <span className="font-medium">— Bert</span>
+                        <span className="font-medium">Bert — Founder, Oude Vismijn 1</span>
                         {/* <span className="mx-1">—</span> {designation} */}
                     </p>
 
                     {/* Slider Dots */}
                     <div className="flex items-center gap-2">
                         <span className="h-[2px] w-20 bg-neutral-300"></span>
-                        <span className="h-[2px] w-8 bg-neutral-900"></span>
+                        <span className="h-[2px] w-8 bg-neutral-300"></span>
                         <span className="h-[2px] w-4 bg-neutral-300"></span>
                     </div>
                     </div>

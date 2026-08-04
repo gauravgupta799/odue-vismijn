@@ -30,7 +30,7 @@ export function News() {
           <span className="lg:pl-[52px] xl:pl-[64px]"> Wat gebeurt er op Oude Vismijn 1? </span>
           <span className="">at Oude Vismijn 1</span>
         </h2>
-        <p className="mt-3 max-w-[460px] text-[14px] leading-4">{description}</p>
+        <p className="mt-3 max-w-[460px] text-[14px] leading-5">{description}</p>
       </div>
 
       <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-3 lg:mt-[83px]">

@@ -27,7 +27,7 @@ export function About() {
       </div>
 
       <div className="reveal col-span-1 flex flex-col justify-end gap-6 lg:col-span-4 lg:col-start-9 lg:pt-[9px]">
-        <p className="max-w-[380px] text-sm leading-4">{description}</p>
+        <p className="max-w-[380px] text-sm leading-5">{description}</p>
       </div>
 
       <div className="reveal col-span-1 pt-4 lg:col-span-7 lg:pt-[64px]">
@@ -43,7 +43,7 @@ export function About() {
         {aboutPoints.map((point) => (
           <div key={point} className="flex gap-3">
             <ArrowGlyph className="h-8 w-[18px] shrink-0" />
-            <p className="max-w-[272px] text-base font-medium leading-5">
+            <p className="max-w-[340px] text-base font-medium leading-5">
               {point}
             </p>
           </div>

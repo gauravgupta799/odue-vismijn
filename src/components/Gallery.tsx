@@ -37,7 +37,7 @@ export function Gallery() {
             Gallery
           </h2>
           <div className="col-span-1 lg:col-span-4 lg:col-start-9">
-            <p className="max-w-[326px] text-base leading-5">
+            <p className="max-w-[326px] text-sm leading-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
               lacinia
             </p>

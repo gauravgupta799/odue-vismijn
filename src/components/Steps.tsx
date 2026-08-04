@@ -16,7 +16,7 @@ export function Steps() {
         <h2 className="mx-auto max-w-[471px] text-center text-[30px] font-medium leading-[34px] tracking-[-0.36px] sm:text-4xl sm:leading-[44px]">
           <span>Wil jij hier iets starten? </span> 
         </h2>
-        <p className="mx-auto mt-3 max-w-[358px] text-center text-sm leading-4">
+        <p className="mx-auto mt-3 max-w-[358px] text-center text-sm leading-5">
          Ben je een jonge ondernemer, trainer, coach of initiatiefnemer? Zoek je een plek om klanten te ontvangen of sessies te organiseren? 
         </p>
         <img
@@ -28,7 +28,7 @@ export function Steps() {
       </div>
 
       <div className="reveal col-span-1 flex flex-col justify-end lg:col-span-4 lg:col-start-9">
-        <p className="mb-4 text-xl">Hier krijg je:</p>
+        <p className="mb-4 text-base">Hier krijg je:</p>
         {steps.map((step, index) => (
           <button
             key={step}
