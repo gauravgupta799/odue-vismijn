@@ -59,7 +59,7 @@ export function Header() {
             EN +
           </span>
           <ActionButton className="hidden md:inline-flex">
-            Be A Part
+           Ontdek Oude Vismijn 1
           </ActionButton>
           <button
             type="button"
