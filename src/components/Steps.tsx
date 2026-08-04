@@ -3,10 +3,10 @@ import send from "@/assets/send.svg";
 import together from "@/assets/together.svg";
 
 const steps = [
-  'Send a message',
-  'We look together',
-  'Get a real feel',
-  'You start',
+  'Een warme en professionele locatie  ',
+  'Een klankbord wanneer nodig  ',
+  'Zichtbaarheid via netwerk en ledscherm ',
+  'De energie van andere ondernemende mensen',
 ];
 
 export function Steps() {
@@ -14,12 +14,10 @@ export function Steps() {
     <section className="container-wide grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-0 py-20 sm:py-24 md:py-28 lg:py-32 xl:py-36 lg:px-12 xl:px-16">
       <div className="reveal col-span-1 lg:col-span-7">
         <h2 className="mx-auto max-w-[471px] text-center text-[30px] font-medium leading-[34px] tracking-[-0.36px] sm:text-4xl sm:leading-[44px]">
-          <span>Starting here is</span> <br /> 
-          <span>simpler than you think</span>
+          <span>Wil jij hier iets starten? </span> 
         </h2>
         <p className="mx-auto mt-3 max-w-[358px] text-center text-sm leading-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-          lacinia odio vitae vestibulum. Fusce
+         Ben je een jonge ondernemer, trainer, coach of initiatiefnemer? Zoek je een plek om klanten te ontvangen of sessies te organiseren? 
         </p>
         <img
           src={thinkLogo}
@@ -30,6 +28,7 @@ export function Steps() {
       </div>
 
       <div className="reveal col-span-1 flex flex-col justify-end lg:col-span-4 lg:col-start-9">
+        <p className="mb-4 text-xl">Hier krijg je:</p>
         {steps.map((step, index) => (
           <button
             key={step}
