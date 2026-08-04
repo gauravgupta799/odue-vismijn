@@ -21,7 +21,7 @@ export function Footer() {
               {description}
             </p>
             <div className="mt-8">
-              <ActionButton dark>BE A PART</ActionButton>
+              <ActionButton dark>Ontdek Oude Vismijn 1</ActionButton>
             </div>
           </div>
 

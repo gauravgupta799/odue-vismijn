@@ -6,17 +6,17 @@ const description =
 
 const newsItems = [
   {
-    title: 'Podcast Vismijn — new episode live',
+    title: 'Podcast Vismijn — nieuwe aflevering nu live',
     image: `${newsImage}`,
     date: 'JUNE 2025',
   },
   {
-    title: 'Podcast Vismijn — new episode live',
+    title: 'Podcast Vismijn — nieuwe aflevering nu live',
     image: `${newsImage}`,
     date: 'JUNE 2025',
   },
   {
-    title: 'Welcome — a new starter has arrived',
+    title: 'Welkom — een nieuwe starter is gearriveerd',
     image: `${newsImage}`,
     date: 'JUNE 2025',
   },

@@ -1,10 +1,7 @@
 import heroBanner from "@/assets/home-banner.png";
 
 
-
-
 const description ='Welkom op Oude Vismijn 1 in Lokeren. Dit is de plek waar projecten samenkomen en waar nieuwe ideeën kunnen starten. Soms groeit hier een bedrijf. Soms een samenwerking. Soms gewoon een goed idee dat eindelijk vorm krijgt.';
-
 
 
 export function Hero() {

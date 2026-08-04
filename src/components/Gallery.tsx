@@ -34,15 +34,14 @@ export function Gallery() {
       <section className="container-wide py-20 lg:py-24 xl:py-28 lg:px-12 xl:px-16">
         <div className="reveal grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-0">
           <h2 className="col-span-1 text-[48px] font-medium leading-none tracking-[-0.64px] sm:text-[64px] lg:col-span-7">
-            Gallery
+            Galerij
           </h2>
           <div className="col-span-1 lg:col-span-4 lg:col-start-9">
             <p className="max-w-[326px] text-sm leading-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              lacinia
+             Een kijkje achter de schermen van een plek waar ideeën groeien, mensen elkaar ontmoeten en inspirerende momenten ontstaan.
             </p>
             <div className="mt-5">
-              <ActionButton>View gallery</ActionButton>
+              <ActionButton>Bekijk galerij</ActionButton>
             </div>
           </div>
         </div>
