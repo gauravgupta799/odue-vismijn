@@ -95,7 +95,7 @@ export function Header() {
               </ul>
             </nav>
             <div className="mt-6">
-              <ActionButton>Be A Part</ActionButton>
+              <ActionButton>Ontdek Oude Vismijn 1</ActionButton>
             </div>
           </div>
         </div>
