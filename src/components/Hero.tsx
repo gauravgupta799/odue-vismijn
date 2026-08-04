@@ -4,7 +4,8 @@ import heroBanner from "@/assets/home-banner.png";
 
 
 const description =
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Fusce vehicula, justo';
+  'Welkom op Oude Vismijn 1 in Lokeren. Dit is de plek waar projecten samenkomen en waar nieuwe ideeën kunnen starten. Soms groeit hier een bedrijf. Soms een samenwerking. Soms gewoon een goed idee dat eindelijk vorm krijgt.
+';
 
 export function Hero() {
   return (
@@ -13,7 +14,7 @@ export function Hero() {
       className="container-wide grid grid-cols-1 gap-7 lg:px-12 xl:px-16 pb-6 pt-8 lg:grid-cols-12 lg:gap-0 lg:py-[96px]"
     >
       <h1 className="reveal col-span-1 max-w-[404px] text-[30px] leading-[31px] tracking-[-0.44px] sm:text-[44px] sm:leading-[48px] lg:col-span-6">
-        Space For People Who Want To Make A Difference.
+         Ruimte voor mensen die iets willen betekenen.
       </h1>
       <div className="reveal flex items-start gap-3 self-end lg:col-span-4 lg:col-start-9 lg:mb-1">
         <ArrowGlyph className="mt-0.5 h-8 w-[18px] shrink-0" />
