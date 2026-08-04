@@ -7,6 +7,7 @@ import { Gallery } from '@/components/Gallery';
 import { News } from '@/components/News';
 import { Footer } from '@/components/Footer';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
+import TestimonialSection from './components/testimonial';
 
 function App() {
   useScrollReveal();
@@ -19,6 +20,7 @@ function App() {
       <About />
       <Services />
       <Steps />
+      <TestimonialSection/>
       <Gallery />
       <News />
       <Footer />

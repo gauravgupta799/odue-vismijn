@@ -2,7 +2,7 @@ import { ActionButton } from '@/components/ActionButton';
 import footerLogo from "@/assets/oude-footer-logo.svg"
 
 const description =
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Fusce vehicula, justo';
+  'Ben je een jonge ondernemer, trainer, coach of initiatiefnemer? Zoek je een plek om klanten te ontvangen of sessies te organiseren? Misschien begint jouw idee hier.';
 
 const navigationLinks = ['Home', 'About', 'Services'];
 const otherLinks = ['Offering', 'Resources', 'News & Updates'];
@@ -14,8 +14,8 @@ export function Footer() {
         <div className="reveal grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-0">
           <div className="md:col-span-6">
             <h2 className="max-w-[360px] pl-0 text-[30px] font-medium leading-[34px] tracking-[-0.36px] sm:text-4xl sm:leading-[44px]">         
-              <span className="lg:pl-[52px] xl:pl-[60px]">There is still a </span><br />
-              <span className=""> room for you too</span>
+              <span className="lg:pl-[52px] xl:pl-[60px]">Wil jij hier iets starten?</span>
+              {/* <span className=""> room for you too</span> */}
             </h2>
             <p className="mt-2 max-w-[427px] text-sm leading-4">
               {description}

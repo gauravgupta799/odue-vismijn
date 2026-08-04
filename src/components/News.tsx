@@ -2,7 +2,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import newsImage from "@/assets/blog-1.png";
 
 const description =
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Fusce vehicula, justo';
+  'Een plek waar opleidingen doorgaan, podcasts worden opgenomen, AI besproken wordt, sociale projecten groeien en ondernemers hun eerste klanten ontvangen.';
 
 const newsItems = [
   {
@@ -25,12 +25,12 @@ const newsItems = [
 export function News() {
   return (
     <section className="container-wide py-20 sm:py-24 md:py-28 lg:py-32 xl:py-36 lg:px-12 xl:px-16">
-      <div className="reveal mx-auto max-w-[476px]">
+      <div className="reveal mx-auto max-w-[648px]">
         <h2 className="text-[30px] font-medium leading-[34px] tracking-[-0.36px] sm:text-4xl sm:leading-[44px]">
-          <span className="lg:pl-[52px] xl:pl-[64px]"> What happened recently</span><br />
+          <span className="lg:pl-[52px] xl:pl-[64px]"> Wat gebeurt er op Oude Vismijn 1?</span>
           <span className="">at Oude Vismijn 1</span>
         </h2>
-        <p className="mt-3 max-w-[340px] text-xs leading-4">{description}</p>
+        <p className="mt-3 max-w-[460px] text-[14px] leading-4">{description}</p>
       </div>
 
       <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-3 lg:mt-[83px]">
