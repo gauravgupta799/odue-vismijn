@@ -18,7 +18,7 @@ export function Hero() {
       </h1>
       <div className="reveal flex items-start gap-3 self-end lg:col-span-4 lg:col-start-9 lg:mb-1">
         <ArrowGlyph className="mt-0.5 h-8 w-[18px] shrink-0" />
-        <p className="max-w-[278px] text-sm leading-4">{description}</p>
+        <p className="max-w-[380px] text-sm leading-4">{description}</p>
       </div>
     </section>
   );
