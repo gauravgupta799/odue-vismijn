@@ -10,6 +10,7 @@ const navLinks = [
   { label: 'Services', href: '#services' },
 ];
 
+
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
