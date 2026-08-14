@@ -24,7 +24,7 @@ const newsItems = [
 
 export function News() {
   return (
-    <section className="container-wide py-20 sm:py-24 md:py-28 lg:py-32 xl:py-36">
+    <section className="container-wide py-20 sm:py-24 md:py-28 lg:py-32 xl:py-36" id="nieuws&updates">
       <div className="reveal mx-auto max-w-[462px]">
         <h2 className="text-[30px] font-medium leading-[34px] tracking-[-0.36px] sm:text-4xl sm:leading-[44px]">
           <span className="lg:pl-[52px] xl:pl-[64px]"> Wat gebeurt er op Oude Vismijn 1? </span>
@@ -33,7 +33,7 @@ export function News() {
         <p className="mt-3 max-w-[460px] text-[14px] leading-5">{description}</p>
       </div>
 
-      <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-3 lg:mt-[83px]">
+      <div className="mt-12 md:mt-14 grid grid-cols-1 gap-8 sm:grid-cols-3 lg:mt-[83px]">
         {newsItems.map((item, index) => (
           <Card
             key={`${item.title}-${index}`}

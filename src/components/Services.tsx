@@ -69,22 +69,20 @@ const services = [
 export function Services() {
   return (
     <section
-      id="services"
+      id="diensten"
       className="bg-ink pb-10 pt-12 text-cream py-20 lg:py-24 lg:px-12 xl:px-16"
     >
       <div className="container-wide  lg:px-16 xl:px-20">
         <div className="reveal mx-auto max-w-[502px] text-center">
           <h2 className="text-[30px] font-medium leading-[34px] tracking-[-0.36px] sm:text-4xl sm:leading-[44px] ">
             <span className="">Onze initiatieven.</span>
-            {/* <span>massage. From podcast recordings to social
-            change.</span> */}
           </h2>
           <p className="mt-4 max-w-[427px] text-sm leading-5 mx-auto">
             Van AI en educatie tot podcasts, welzijn en maatschappelijke impact. Ontdek de projecten die groeien vanuit Oude Vismijn 1.
           </p>
         </div>
 
-        <div className="mt-10 grid grid-cols-1 gap-x-[112px] lg:mt-[112px] lg:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-12 md:mt-16 grid grid-cols-1 gap-x-[112px] lg:mt-[112px] md:grid-cols-2 xl:grid-cols-3">
           {services.map((service, index) => (
             <Card
               key={`${service.title}-${index}`}

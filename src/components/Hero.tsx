@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="container-wide grid grid-cols-1 gap-7 lg:px-12 xl:px-16 pb-6 pt-8 lg:grid-cols-12 lg:gap-0 lg:py-[96px]"
+      className="container-wide grid grid-cols-1 gap-7 lg:px-12 xl:px-16 py-8 lg:grid-cols-12 lg:gap-0 lg:py-[96px]"
     >
       <h1 className="reveal col-span-1 max-w-[404px] text-[30px] leading-[31px] tracking-[-0.44px] sm:text-[44px] sm:leading-[48px] lg:col-span-6">
          Ruimte voor mensen die iets willen betekenen.

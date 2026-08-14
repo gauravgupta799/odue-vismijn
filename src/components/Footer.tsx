@@ -4,18 +4,17 @@ import footerLogo from "@/assets/oude-footer-logo.svg"
 const description =
   'Ben je een jonge ondernemer, trainer, coach of initiatiefnemer? Zoek je een plek om klanten te ontvangen of sessies te organiseren? Misschien begint jouw idee hier.';
 
-const navigationLinks = ['Home', 'About', 'Services'];
-const otherLinks = ['Offering', 'Resources', 'News & Updates'];
+const navigationLinks = ['Home', 'Over ons', 'Diensten'];
+const otherLinks = ['Aanbod', 'Bronnen', 'Nieuws & updates'];
 
 export function Footer() {
   return (
     <footer className="relative overflow-hidden bg-ink text-cream mt-8">
-      <div className="container-wide relative py-20 lg:py-24 xl:py-28 lg:px-12 xl:px-16">
+      <div className="container-wide relative py-20 lg:py-24 xl:py-28">
         <div className="reveal grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-0">
           <div className="md:col-span-6">
             <h2 className="max-w-[460px] pl-0 text-[30px] font-medium leading-[34px] tracking-[-0.36px] sm:text-4xl sm:leading-[44px]">         
               <span className="lg:pl-[52px] xl:pl-[60px]">Wil jij hier iets starten?</span>
-              {/* <span className=""> room for you too</span> */}
             </h2>
             <p className="mt-2 max-w-[427px] text-sm leading-4">
               {description}
@@ -33,13 +32,13 @@ export function Footer() {
         <div className="mt-12 grid grid-cols-1 border-t border-cream/20 lg:mt-[84px] sm:grid-cols-2 lg:grid-cols-3">
           <section className="border-b border-cream/20 py-12 lg:border-b-0 lg:border-r lg:pr-20">
             <h3 className="text-sm font-normal leading-4 opacity-40">
-              Navigation
+              Navigatie
             </h3>
             <ul className="mt-8 space-y-1 text-xl font-semibold leading-[44px]">
               {navigationLinks.map((link) => (
                 <li key={link}>
                   <a
-                    href={`#${link.toLowerCase()}`}
+                    href={`#${link.split(" ").join("").toLowerCase()}`}
                     className="transition-opacity hover:opacity-60"
                   >
                     {link}
@@ -51,13 +50,13 @@ export function Footer() {
 
           <section className="border-b border-cream/20 py-12 lg:border-b-0 lg:border-r lg:px-20">
             <h3 className="text-sm font-normal leading-4 opacity-40">
-              Other Links
+              Andere links
             </h3>
             <ul className="mt-8 space-y-1 text-xl font-medium leading-[44px]">
               {otherLinks.map((link) => (
                 <li key={link}>
                   <a
-                    href="#home"
+                    href={`#${link.split(" ").join("").toLowerCase()}`}
                     className="transition-opacity hover:opacity-60"
                   >
                     {link}
@@ -80,7 +79,7 @@ export function Footer() {
                 info@oudevismijn1.be
               </a>
               <address className="not-italic leading-[32px] mt-2">
-                Oude Vismijn 1 Lokeren, Belgium
+                Oude Vismijn 1, Lokeren, België
               </address>
             </div>
           </section>
@@ -93,7 +92,7 @@ export function Footer() {
             <a href="#" className="hover:opacity-60" target="_blank">Instagram</a> |
             <a href="#" className="hover:opacity-60" target="_blank">LinkedIn</a>
             </p>
-          <p>A place that makes sense</p>
+          <p>Een plek die klopt</p>
         </div>
       </div>
     </footer>

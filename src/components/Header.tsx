@@ -6,8 +6,8 @@ import siteLogo  from "@/assets/oude-logo.svg";
 
 const navLinks = [
   { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
-  { label: 'Services', href: '#services' },
+  { label: 'Over ons', href: '#overons' },  //about
+  { label: 'Diensten', href: '#diensten' }, //services
 ];
 
 
