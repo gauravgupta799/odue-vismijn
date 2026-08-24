@@ -1,6 +1,7 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { newsItems } from "../data/news";
+import { NavLink } from "react-router-dom";
 
 const Blog =()=>{
     useScrollReveal();
@@ -33,9 +34,9 @@ const Blog =()=>{
                 {item.date}
               </p>
               <p className="mt-1 text-[16px] md:text-xl font-normal leading:4 md:leading-6">
-                <a href="#" className="hover:text-black hover:underline">
+                <NavLink to="/bloggendetail" className="hover:text-black hover:underline">
                   {item.title}
-                </a>
+                </NavLink>
               </p>
             </CardContent>
           </Card>

@@ -9,6 +9,7 @@ import Contact from '@/pages/Contact';
 import About from "@/pages/About"
 import Blog from '@/pages/Blog';
 import Initiatieven from '@/pages/Initiatieven';
+import BlogDetail from './pages/BlogDetails';
 
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
         
           <Route path="/bloggen" element={<Blog/> } />
           <Route path="/contact" element={<Contact/>} />
+          <Route path="/bloggendetail" element={<BlogDetail/>} />
+
         </Route>
 
          {/* <Route path="*" element={<NotFound />} /> */}
