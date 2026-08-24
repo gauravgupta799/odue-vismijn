@@ -10,9 +10,9 @@ const BlogDetail = () => {
         <div className="container-wide">
 
             {/* Header */}
-            <section className="px-5 pb-10 pt-16 sm:px-8 sm:pt-20 lg:px-0 lg:pb-12 lg:pt-[72px]">
+            <section className="pb-10 pt-16 sm:pt-20 lg:px-0 lg:pb-12 lg:pt-[72px]">
                 <div className="mx-auto max-w-[1400px]">
-                    <div className="mx-auto max-w-[500px]">
+                    <div className="mx-auto max-w-[620px]">
                         <h1 className="text-[32px] leading-[1.05] tracking-[-0.04em] sm:text-[34px] md:text-[36px] lg:text-[40px] xl:text-[44px]">
                             Waarom Een Goede Plek
                             Meer Doet Dan Alleen
@@ -20,7 +20,7 @@ const BlogDetail = () => {
                         </h1>
 
                         {/* Author */}
-                        <div className="mt-4 flex items-center gap-2">
+                        <div className="mt-6 flex items-center gap-4">
                             <div className="h-[80px] w-[80px] overflow-hidden rounded-full">
                                 <img
                                 src={authorImage}
@@ -40,181 +40,176 @@ const BlogDetail = () => {
             </section>
 
             {/* Hero image + Data */}
-            <section className="px-5 sm:px-8 lg:px-0">
+            <section className="">
                 <div className="mx-auto max-w-[820px]">
-                    <p className="mb-2 text-[10px] text-[#333333]">
+                    <p className="mb-2 text-[12px] text-[#333333]">
                         Datum: 11 Augustus 2026
                     </p>
-
                     <div className="overflow-hidden">
                         <img
                         src={heroImage}
                         alt="Waarom een goede plek meer doet"
-                        className="aspect-[1.75] w-full object-cover"
+                        className="aspect-[2] w-full object-cover"
                         />
                     </div>
                 </div>
             </section>
 
+            {/* Article Content */}
+            <article className="mt-12 sm:mt-14 md:mt-16 lg:mt-20 xl:mt-24">
+                <div className="mx-auto max-w-[720px]">
+                {/* Intro */}
+                <ArticleText>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam
+                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                    erat, sed diam voluptua. At vero eos et accusam et justo duo
+                    dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                    sanctus est Lorem ipsum dolor sit amet.
+                </ArticleText>
+
+                <ArticleText>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam
+                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                    erat, sed diam voluptua. At vero eos et accusam et justo duo
+                    dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                    sanctus est.
+                </ArticleText>
+
+                <ArticleText>
+                    Lorem amet ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                    duo dolores et ea rebum.
+                </ArticleText>
+
+                <ArticleText>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam
+                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                    erat, sed diam voluptua. At vero eos et accusam et justo duo
+                    dolores et ea rebum.
+                </ArticleText>
+
+                <ArticleText>
+                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                    dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed diam.
+                </ArticleText>
+
+                {/* =================================================
+                    SECTION 01
+                ================================================= */}
+                <section className="mt-20 sm:mt-24">
+                    <h2 className="text-[20px] tracking-[-0.02em] leading-[1.25] md:text-[22px] xl:text-[24px] mb-4">
+                        Ruimte Om Vooruit Te Gaan
+                    </h2>
+
+                    <ArticleText>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam
+                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                        erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                        sanctus est Lorem ipsum dolor sit amet.
+                    </ArticleText>
+
+                    <ArticleText>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam
+                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                        erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum.
+                    </ArticleText>
+                </section>
+
+                {/* =================================================
+                    SECTION 02
+                ================================================= */}
+                <section className="mt-20 sm:mt-24">
+                    <h2 className="text-[20px] tracking-[-0.02em] leading-[1.25] md:text-[22px] xl:text-[24px] ">
+                        Van Idee Naar Eerste Stap
+                    </h2>
+
+                    <div className="mt-6 mb-8 overflow-hidden">
+                        <img
+                            src={contentImage}
+                            alt="Mensen werken samen"
+                            className="aspect-[2] w-full object-cover"
+                        />
+                    </div>
+
+                    <ArticleText>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam
+                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                        erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                        sanctus est Lorem ipsum dolor sit amet.
+                    </ArticleText>
+
+                    <ArticleText>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam
+                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                        erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum.
+                    </ArticleText>
+                </section>
+
+                {/* =================================================
+                    AUTHOR
+                ================================================= */}
+                <section className="mt-14 border-t border-[#d6d4ce] pt-9 sm:mt-16 sm:pt-10">
+                    <div className="flex items-center gap-4">
+                    <div className="h-[80px] w-[80px] shrink-0 overflow-hidden rounded-full">
+                        <img
+                        src={authorImage}
+                        alt="Bert"
+                        className="h-full w-full object-cover"
+                        />
+                    </div>
+
+                    <div>
+                        <p className="text-[16px] font-medium">
+                            Bert — Founder, Oude Vismijn 1
+                        </p>
+
+                        <p className="mt-1 max-w-[360px] text-[12px] leading-[1.4] text-[#555555]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Vivamus lacinia odio vitae vestibulum.
+                        </p>
+                    </div>
+                    </div>
+                </section>
+                </div>
+            </article>
+
+            {/* Related Articles */}
+            <section className="pb-20 pt-24 sm:pb-24 sm:pt-28 lg:pt-[110px]">
+                <div className="mx-auto max-w-[1180px] ">
+                <h2 className="text-[26px] md:text-[30px] lg:text-[32px] xl:text-[36px] leading-[48px] tracking-[-0.36px]">
+                    Gerelateerde artikelen
+                </h2>
+
+                <div className="mt-9 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">
+                    <RelatedArticleCard
+                    image={heroImage}
+                    date="JUNE 2025"
+                    title="Podcast Vismijn — nieuwe episode live"
+                    />
+
+                    <RelatedArticleCard
+                    image={heroImage}
+                    date="JUNE 2025"
+                    title="Podcast Vismijn — nieuwe episode live"
+                    />
+
+                    <RelatedArticleCard
+                    image={heroImage}
+                    date="JUNE 2025"
+                    title="Welkom — een nieuwe starter is arrived"
+                    />
+                </div>
+                </div>
+            </section>
+
         </div>
 
-
-      {/* =====================================================
-          ARTICLE
-      ===================================================== */}
-      <article className="px-5 sm:px-8 lg:px-0 mt-20">
-        <div className="mx-auto max-w-[720px]">
-          {/* Intro */}
-          <ArticleText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo
-            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-            sanctus est Lorem ipsum dolor sit amet.
-          </ArticleText>
-
-          <ArticleText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo
-            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-            sanctus est.
-          </ArticleText>
-
-          <ArticleText>
-            Lorem amet ipsum dolor sit amet, consectetur adipiscing elit, sed
-            diam nonumy eirmod tempor invidunt ut labore et dolore magna
-            aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
-            duo dolores et ea rebum.
-          </ArticleText>
-
-          <ArticleText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo
-            dolores et ea rebum.
-          </ArticleText>
-
-          <ArticleText>
-            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-            dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed diam.
-          </ArticleText>
-
-          {/* =================================================
-              SECTION 01
-          ================================================= */}
-          <section className="mt-20 sm:mt-24">
-            <h2 className="text-[20px] tracking-[-0.02em] leading-[1.25] md:text-[22px] xl:text-[24px] ">
-              Ruimte Om Vooruit Te Gaan
-            </h2>
-
-            <ArticleText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet.
-            </ArticleText>
-
-            <ArticleText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum.
-            </ArticleText>
-          </section>
-
-          {/* =================================================
-              SECTION 02
-          ================================================= */}
-          <section className="mt-20 sm:mt-24">
-            <h2 className="text-[20px] tracking-[-0.02em] leading-[1.25] md:text-[22px] xl:text-[24px] ">
-              Van Idee Naar Eerste Stap
-            </h2>
-
-            <div className="mt-8 overflow-hidden">
-              <img
-                src={contentImage}
-                alt="Mensen werken samen"
-                className="aspect-[1.5] w-full object-cover"
-              />
-            </div>
-
-            <ArticleText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet.
-            </ArticleText>
-
-            <ArticleText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum.
-            </ArticleText>
-          </section>
-
-          {/* =================================================
-              AUTHOR
-          ================================================= */}
-          <section className="mt-14 border-t border-[#d6d4ce] pt-9 sm:mt-16 sm:pt-10">
-            <div className="flex items-center gap-4">
-              <div className="h-[80px] w-[80px] shrink-0 overflow-hidden rounded-full">
-                <img
-                  src={authorImage}
-                  alt="Bert"
-                  className="h-full w-full object-cover"
-                />
-              </div>
-
-              <div>
-                <p className="text-[16px] font-medium">
-                  Bert — Founder, Oude Vismijn 1
-                </p>
-
-                <p className="mt-1 max-w-[360px] text-[12px] leading-[1.4] text-[#555555]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Vivamus lacinia odio vitae vestibulum.
-                </p>
-              </div>
-            </div>
-          </section>
-        </div>
-      </article>
-
-      {/* =====================================================
-          RELATED ARTICLES
-      ===================================================== */}
-      <section className="px-5 pb-20 pt-24 sm:px-8 sm:pb-24 sm:pt-28 lg:px-0 lg:pt-[110px]">
-        <div className="mx-auto max-w-[1180px] ">
-          <h2 className="text-[26px] md:text-[30px] lg:text-[32px] xl:text-[36px] leading-[48px] tracking-[-0.36px]">
-            Gerelateerde artikelen
-          </h2>
-
-          <div className="mt-9 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">
-            <RelatedArticleCard
-              image={heroImage}
-              date="JUNE 2025"
-              title="Podcast Vismijn — nieuwe episode live"
-            />
-
-            <RelatedArticleCard
-              image={heroImage}
-              date="JUNE 2025"
-              title="Podcast Vismijn — nieuwe episode live"
-            />
-
-            <RelatedArticleCard
-              image={heroImage}
-              date="JUNE 2025"
-              title="Welkom — een nieuwe starter is arrived"
-            />
-          </div>
-        </div>
-      </section>
     </article>
   );
 };
@@ -229,7 +224,7 @@ interface ArticleTextProps {
 
 const ArticleText = ({ children }: ArticleTextProps) => {
   return (
-    <p className="mt-7 text-[16px] leading-[1.55] text-[#222222] lg:text-[18px]">
+    <p className="text-[16px] leading-[1.55] text-[#222222] lg:text-[18px] mb-5">
       {children}
     </p>
   );
@@ -251,23 +246,26 @@ const RelatedArticleCard = ({
   title,
 }: RelatedArticleCardProps) => {
   return (
-    <article className="group">
-      <NavLink to="/bloggendetail" className="overflow-hidden">
-        <img
-          src={image}
-          alt={title}
-          className="aspect-[1.5] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-        />
-      </NavLink>
-
-    <p className="mt-4 text-xs leading-6">
-        {date}
-    </p>
-    <p className="mt-1 text-[16px] md:text-xl font-normal leading:4 md:leading-6">
-        <NavLink to="/bloggendetail" className="hover:text-black underline">
-            {title}
+    <article className="related-articles">
+        <NavLink to="/bloggendetail" className=" block">
+            <figure className="overflow-hidden group">
+                <img
+                    src={image}
+                    alt={title}
+                    className="img-fluid transition-transform duration-500 group-hover:scale-[1.05] cursor-pointer"
+                    loading="lazy"
+                />
+            </figure>
         </NavLink>
-    </p>
+
+        <p className="mt-4 text-xs leading-6">
+            {date}
+        </p>
+        <p className="mt-1 text-[16px] md:text-xl font-normal leading:4 md:leading-6">
+            <NavLink to="/bloggendetail" className="hover:text-black/75 hover:underline">
+                {title}
+            </NavLink>
+        </p>
     </article>
   );
 };

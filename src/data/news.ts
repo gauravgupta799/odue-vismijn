@@ -1,5 +1,5 @@
 
-import newsImage from "@/assets/blog-1.png";
+import newsImage from "@/assets/blog-1.webp";
 
 export interface NewsItem {
   title: string;

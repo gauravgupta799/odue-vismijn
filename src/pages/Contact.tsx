@@ -1,5 +1,5 @@
 import { FormEvent } from "react";
-import contactImage from "../assets/contact.png";
+import contactImage from "../assets/contact.webp";
 import { ActionButton } from '@/components/ActionButton';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 

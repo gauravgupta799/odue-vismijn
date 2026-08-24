@@ -23,17 +23,21 @@ export function News() {
             className="reveal rounded-none border-0 bg-transparent py-0"
           >
             <CardContent className="p-0">
-              <img
-                src={item.image}
-                alt={item.title}
-                className="h-auto w-full object-cover"
-                loading="lazy"
-              />
+               <NavLink to="/bloggendetail">
+                <figure className="overflow-hidden group block">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="img-fluid transition-transform duration-500 group-hover:scale-[1.05] cursor-pointer"
+                    loading="lazy"
+                  />
+                </figure>
+               </NavLink>
               <p className="mt-4 font-instrument text-xs leading-6">
                 {item.date}
               </p>
               <p className="mt-1 text-[16px] md:text-xl font-normal leading:4 md:leading-6">
-                <NavLink to="/bloggendetail" className="hover:text-black hover:underline">
+                <NavLink to="/bloggendetail" className="hover:text-black/75 hover:underline">
                   {item.title}
                 </NavLink>
               </p>

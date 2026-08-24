@@ -1,7 +1,7 @@
-import aboutHero from "@/assets/home-banner.png";
-import aboutTeam from "@/assets/ai-evenings.png";
-import aboutSpace from  "@/assets/ai-evenings.png";
-import aboutFist from  "@/assets/ai-evenings.png";
+import aboutHero from "@/assets/aboutImgs/about-hero.webp";
+import aboutTeam from "@/assets/aboutImgs/warm.webp";
+import aboutSpace from  "@/assets/aboutImgs/podcast.webp";
+import aboutFist from  "@/assets/aboutImgs/energetic.webp";
 import TestimonialSection from "@/components/testimonial";
 
 import { useScrollReveal } from '@/hooks/useScrollReveal';
@@ -26,7 +26,7 @@ const About = () => {
                 </div>
             </div>
             <figure className="w-full overflow-hidden reveal">
-                <img src={aboutHero} alt="Oude Vismijn 1" className="img-fluid" />
+                <img src={aboutHero} alt="Oude Vismijn 1" className="img-fluid" fetchPriority="high"/>
             </figure>
 
             {/* h-full w-full object-cover object-center h-[250px] sm:h-[360px] md:h-[430px] lg:h-[510px]*/}

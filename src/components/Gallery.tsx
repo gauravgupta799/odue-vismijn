@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { ActionButton } from '@/components/ActionButton';
-import galleryImg1 from "@/assets/home-banner.png"
+import galleryImg1 from "@/assets/home-banner.webp"
 
 const galleryImages = [
   {

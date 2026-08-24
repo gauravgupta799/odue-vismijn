@@ -1,8 +1,8 @@
-import aboutHero from "@/assets/home-banner.png";
+import aboutHero from "@/assets/home-banner.webp";
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { ActionButton } from '@/components/ActionButton';
 import { Card, CardContent } from '@/components/ui/card';
-import thinkLogo from "@/assets/think.png";
+import thinkLogo from "@/assets/think.webp";
 import send from "@/assets/send.svg";
 import together from "@/assets/together.svg";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import testimonialImage from "@/assets/testimonial.png";
+import testimonialImage from "@/assets/testimonial.webp";
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 const TestimonialSection = () => {

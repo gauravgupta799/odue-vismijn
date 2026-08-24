@@ -1,4 +1,4 @@
-import thinkLogo from "@/assets/think.png";
+import thinkLogo from "@/assets/think.webp";
 import send from "@/assets/send.svg";
 import together from "@/assets/together.svg";
 

@@ -1,6 +1,6 @@
 import { ActionButton } from '@/components/ActionButton';
 import { ArrowGlyph } from '@/components/Hero';
-import AiEvening from "@/assets/ai-evenings.png";
+import AiEvening from "@/assets/ai-evenings.webp";
 
 const description =
   'Oude Vismijn 1 is geen klassiek businesscenter. Hier wordt gewerkt, geleerd, opgenomen, gebouwd en bijgeschaafd. Alles wat hier gebeurt, heeft beweging in zich.';
