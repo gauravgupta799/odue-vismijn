@@ -1,14 +1,17 @@
 import React from "react";
 import testimonialImage from "@/assets/testimonial.png";
+import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 const TestimonialSection = () => {
+      useScrollReveal();
+
   return (
     <section className="testimonial">
         <div className="container-wide">
             <div className="reveal mx-auto max-w-7xl py-20 sm:py-24 md:py-28 lg:py-32 xl:py-36">
                 <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
                     {/* Left Content */}
-                    <div className="flex h-full flex-col justify-between">
+                    <div className="flex h-full flex-col justify-between reveal">
                         <blockquote className="max-w-lg">
                         <p className="text-xl leading-[1.35] tracking-[-0.02em] text-neutral-900 sm:text-2xl lg:text-[1.75rem]">
                             “Ik geloof dat ideeën pas groeien wanneer je ze ruimte geeft. Oude Vismijn 1 is mijn manier om die ruimte mee mogelijk te maken in Lokeren.”
@@ -31,7 +34,7 @@ const TestimonialSection = () => {
                     </div>
 
                     {/* Right Image */}
-                    <div className="overflow-hidden">
+                    <div className="overflow-hidden reveal">
                         <img
                         src={testimonialImage}
                         alt="Bert"

@@ -1,17 +1,27 @@
 import { Menu, X } from 'lucide-react';
+import { NavLink } from "react-router-dom";
 import { useEffect, useState } from 'react';
 import { ActionButton } from '@/components/ActionButton';
 import { cn } from '@/lib/utils';
 import siteLogo  from "@/assets/oude-logo.svg";
 
+// const navLinks = [
+//   { label: 'Home', href: '#home' },
+//   { label: 'Over ons', href: '#overons' },  //about
+//   { label: 'Diensten', href: '#diensten' }, //services
+// ];
+
+
 const navLinks = [
-  { label: 'Home', href: '#home' },
-  { label: 'Over ons', href: '#overons' },  //about
-  { label: 'Diensten', href: '#diensten' }, //services
-];
+  { label: 'Home', href: "/" },
+  { label: 'Over ons', href: "/about" },
+  { label: 'Diensten', href: '/services' },
+  { label: 'Blog', href: '/blog' },
+]
 
 
-export function Header() {
+
+export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -23,12 +33,8 @@ export function Header() {
   }, []);
 
   return (
-    <header
-      className={cn(
-        'sticky top-0 z-50 transition-all duration-500',
-        scrolled
-          ? 'bg-cream/90 backdrop-blur-md shadow-[0_1px_0_rgba(40,8,7,0.08)]'
-          : 'bg-transparent',
+    <header className={cn('sticky top-0 z-50 transition-all duration-500',
+        scrolled ? 'bg-cream/90 backdrop-blur-md shadow-[0_1px_0_rgba(40,8,7,0.08)]' : 'bg-transparent',
       )}
     >
       <div className="container-wide flex items-center justify-between py-3">
@@ -36,31 +42,27 @@ export function Header() {
           <ul className="flex gap-6 text-xs sm:text-sm">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <a
-                  href={link.href}
-                  className="relative py-1 transition-opacity hover:opacity-60"
+                <NavLink to={link.href} className="relative py-1 transition-opacity hover:opacity-60"
                 >
                   {link.label}
-                </a>
+                </NavLink>
               </li>
             ))}
           </ul>
         </nav>
-        <a
-          href="#home"
-          aria-label="Oude Vismijn 1 home"
-          className="shrink-0"
-        >
+        <NavLink to="/" aria-label="Oude Vismijn 1 home" className="shrink-0">
           <Logo/>
-        </a>
+        </NavLink>
 
         <div className="flex items-center gap-3 sm:gap-8">
           <span className="hidden font-display text-xs sm:text-sm md:inline">
             EN +
           </span>
-          <ActionButton className="hidden md:inline-flex">
-           Ontdek Oude Vismijn 1
-          </ActionButton>
+          <NavLink to="/contact">
+              <ActionButton className="hidden md:inline-flex">
+              Ontdek Oude Vismijn 1
+              </ActionButton>
+          </NavLink>
           <button
             type="button"
             aria-label="Toggle menu"
@@ -84,13 +86,13 @@ export function Header() {
               <ul className="flex flex-col gap-4 text-base">
                 {navLinks.map((link) => (
                   <li key={link.href}>
-                    <a
-                      href={link.href}
+                    <NavLink
+                      to={link.href}
                       onClick={() => setMenuOpen(false)}
                       className="block py-1"
                     >
                       {link.label}
-                    </a>
+                    </NavLink>
                   </li>
                 ))}
               </ul>

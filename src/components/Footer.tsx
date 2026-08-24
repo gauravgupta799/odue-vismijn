@@ -7,7 +7,7 @@ const description =
 const navigationLinks = ['Home', 'Over ons', 'Diensten'];
 const otherLinks = ['Aanbod', 'Bronnen', 'Nieuws & updates'];
 
-export function Footer() {
+export default function Footer() {
   return (
     <footer className="relative overflow-hidden bg-ink text-cream mt-8">
       <div className="container-wide relative py-20 lg:py-24 xl:py-28">

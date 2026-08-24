@@ -1,26 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
-import newsImage from "@/assets/blog-1.png";
+import { newsItems } from "../data/news";
 
-const description =
-  'Een plek waar opleidingen doorgaan, podcasts worden opgenomen, AI besproken wordt, sociale projecten groeien en ondernemers hun eerste klanten ontvangen.';
-
-const newsItems = [
-  {
-    title: 'Podcast Vismijn — nieuwe aflevering nu live',
-    image: `${newsImage}`,
-    date: 'JUNE 2025',
-  },
-  {
-    title: 'Podcast Vismijn — nieuwe aflevering nu live',
-    image: `${newsImage}`,
-    date: 'JUNE 2025',
-  },
-  {
-    title: 'Welkom — een nieuwe starter is gearriveerd',
-    image: `${newsImage}`,
-    date: 'JUNE 2025',
-  },
-];
 
 export function News() {
   return (
@@ -30,11 +10,13 @@ export function News() {
           <span className="lg:pl-[52px] xl:pl-[64px]"> Wat gebeurt er op Oude Vismijn 1? </span>
           <span className="">at Oude Vismijn 1</span>
         </h2>
-        <p className="mt-3 max-w-[460px] text-[14px] leading-5">{description}</p>
+        <p className="mt-3 max-w-[460px] text-[14px] leading-5">
+          Een plek waar opleidingen doorgaan, podcasts worden opgenomen, AI besproken wordt, sociale projecten groeien en ondernemers hun eerste klanten ontvangen.
+        </p>
       </div>
 
       <div className="mt-12 md:mt-14 grid grid-cols-1 gap-8 sm:grid-cols-3 lg:mt-[83px]">
-        {newsItems.map((item, index) => (
+        {newsItems.slice(0, 3).map((item, index) => (
           <Card
             key={`${item.title}-${index}`}
             className="reveal rounded-none border-0 bg-transparent py-0"

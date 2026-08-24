@@ -1,30 +1,33 @@
-import { Header } from '@/components/Header';
-import { Hero, HeroImage } from '@/components/Hero';
-import { About } from '@/components/About';
-import { Services } from '@/components/Services';
-import { Steps } from '@/components/Steps';
-import { Gallery } from '@/components/Gallery';
-import { News } from '@/components/News';
-import { Footer } from '@/components/Footer';
+
 import { useScrollReveal } from '@/hooks/useScrollReveal';
-import TestimonialSection from './components/testimonial';
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import MainLayout from './layouts/MainLayout';
+import Home from "@/pages/Home";
+import Contact from '@/pages/Contact';
+import About from "@/pages/About"
+import Blog from './pages/Blog';
+
 
 function App() {
   useScrollReveal();
 
   return (
-    <main className="overflow-hidden bg-cream text-ink">
-      <Header />
-      <Hero />
-      <HeroImage />
-      <About />
-      <Services />
-      <Steps />
-      <TestimonialSection/>
-      <Gallery />
-      <News />
-      <Footer />
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<MainLayout/>}>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/about" element={<About/>} />
+          {/* <Route path="/services" element={<Services />} /> */}
+        
+          <Route path="/blog" element={<Blog/> } />
+          <Route path="/contact" element={<Contact/>} />
+        </Route>
+
+         {/* <Route path="*" element={<NotFound />} /> */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 
