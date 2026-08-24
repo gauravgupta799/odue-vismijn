@@ -15,7 +15,7 @@ export function ActionButton({children, dark = false, className, onClick,}: Acti
       type= "button"
       onClick={onClick}
       className={cn(
-        'group inline-flex h-[33px] items-stretch rounded-none border text-xs font-medium tracking-[-0.12px] transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-current focus-visible:ring-offset-2',
+        'group inline-flex h-[33px] items-stretch rounded-none border text-xs font-medium tracking-[-0.12px] transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-current focus-visible:ring-offset-2 capitalize',
         dark
           ? 'border-cream/80 bg-transparent text-cream hover:bg-cream hover:text-ink'
           : 'border-ink bg-ink text-cream hover:bg-[#000]',
