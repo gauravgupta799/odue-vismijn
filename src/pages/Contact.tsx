@@ -140,17 +140,20 @@ const ContactSection = () => {
                 <ContactInfo
                     title="E-MAILADRES"
                     value="info@oudevismijn1.be"
+                    link="mailto:info@oudevismijn1.be"
                     underline
                 />
 
                 <ContactInfo
                     title="TELEFOONNUMMER"
                     value="+32 9 394 20 10"
+                    link="tel:+32 9 394 20 10"
                 />
 
                 <ContactInfo
                     title="ADRES"
                     value="Rekelstraat 5, 9000 Gent, Belgium"
+                    link="https://maps.app.goo.gl/3nxsF3asFfLCwR116"
                 />
             </div>
         </div>
@@ -161,23 +164,22 @@ const ContactSection = () => {
 interface ContactInfoProps {
   title: string;
   value: React.ReactNode;
+  link:string;
   underline?: boolean;
 }
 
-const ContactInfo = ({title, value, underline = false}: ContactInfoProps) => {
+const ContactInfo = ({title, value, underline = false, link}: ContactInfoProps) => {
   return (
     <div className="reveal">
       <p className="text-[12px] uppercase leading-[1.3] text-[#333333]">
         {title}
       </p>
 
-      <div
-        className={`mt-2 text-[14px] leading-[1.14] text-[#222222] ${
-          underline ? "underline underline-offset-2" : ""
-        }`}
+      <a href={link} target="_blank" className={`mt-2 text-[14px] leading-[1.14] text-[#222222] 
+      ${ underline ? "underline underline-offset-2" : "" } cursor-pointer hover:opacity-60 hover:underline`}
       >
         {value}
-      </div>
+      </a>
     </div>
   );
 };

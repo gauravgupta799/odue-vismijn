@@ -9,8 +9,8 @@ import Contact from '@/pages/Contact';
 import About from "@/pages/About"
 import Blog from '@/pages/Blog';
 import Initiatieven from '@/pages/Initiatieven';
-import BlogDetail from './pages/BlogDetails';
-import NotFound from './pages/NotFound';
+import BlogDetail from '@/pages/BlogDetails';
+import NotFound from '@/pages/NotFound';
 
 
 function App() {
