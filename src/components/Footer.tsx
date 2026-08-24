@@ -1,10 +1,15 @@
 import { ActionButton } from '@/components/ActionButton';
-import footerLogo from "@/assets/oude-footer-logo.svg"
+import footerLogo from "@/assets/oude-footer-logo.svg";
+import { NavLink } from "react-router-dom";
 
-const description =
-  'Ben je een jonge ondernemer, trainer, coach of initiatiefnemer? Zoek je een plek om klanten te ontvangen of sessies te organiseren? Misschien begint jouw idee hier.';
 
-const navigationLinks = ['Home', 'Over ons', 'Diensten'];
+// const navigationLinks = ['Home', 'Over ons', 'Initiatieven'];
+const navigationLinks = [
+  { label: 'Home', href: "/" },
+  { label: 'Over ons', href: "/overons" },
+  { label: 'Initiatieven', href: '/initiatieven' },
+  { label: 'Bloggen', href: '/bloggen' },
+]
 const otherLinks = ['Aanbod', 'Bronnen', 'Nieuws & updates'];
 
 export default function Footer() {
@@ -17,7 +22,7 @@ export default function Footer() {
               <span className="lg:pl-[52px] xl:pl-[60px]">Wil jij hier iets starten?</span>
             </h2>
             <p className="mt-2 max-w-[427px] text-sm leading-4">
-              {description}
+              Ben je een jonge ondernemer, trainer, coach of initiatiefnemer? Zoek je een plek om klanten te ontvangen of sessies te organiseren? Misschien begint jouw idee hier.
             </p>
             <div className="mt-8">
               <ActionButton dark>Ontdek Oude Vismijn 1</ActionButton>
@@ -35,16 +40,20 @@ export default function Footer() {
               Navigatie
             </h3>
             <ul className="mt-8 space-y-1 text-xl font-semibold leading-[44px]">
-              {navigationLinks.map((link) => (
-                <li key={link}>
-                  <a
-                    href={`#${link.split(" ").join("").toLowerCase()}`}
-                    className="transition-opacity hover:opacity-60"
-                  >
-                    {link}
-                  </a>
-                </li>
-              ))}
+              {navigationLinks.map((link) => {
+                const {label, href} = link;
+                return (
+                   <li key={label}>
+                    <NavLink
+                      to={href}
+                      className="transition-opacity hover:opacity-60 capitalize"
+                    >
+                      {label}
+                    </NavLink>
+                  </li>
+                )
+              })
+              }
             </ul>
           </section>
 

@@ -8,6 +8,7 @@ import Home from "@/pages/Home";
 import Contact from '@/pages/Contact';
 import About from "@/pages/About"
 import Blog from './pages/Blog';
+import Initiatieven from './pages/initiatieven';
 
 
 function App() {
@@ -18,10 +19,10 @@ function App() {
       <Routes>
         <Route element={<MainLayout/>}>
           <Route path="/" element={<Home/>}/>
-          <Route path="/about" element={<About/>} />
-          {/* <Route path="/services" element={<Services />} /> */}
+          <Route path="/overons" element={<About/>} />
+          <Route path="/initiatieven" element={<Initiatieven/>} />
         
-          <Route path="/blog" element={<Blog/> } />
+          <Route path="/bloggen" element={<Blog/> } />
           <Route path="/contact" element={<Contact/>} />
         </Route>
 

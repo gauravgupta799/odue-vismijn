@@ -14,9 +14,9 @@ import siteLogo  from "@/assets/oude-logo.svg";
 
 const navLinks = [
   { label: 'Home', href: "/" },
-  { label: 'Over ons', href: "/about" },
-  { label: 'Diensten', href: '/services' },
-  { label: 'Blog', href: '/blog' },
+  { label: 'Over ons', href: "/overons" },
+  { label: 'Initiatieven', href: '/initiatieven' },
+  { label: 'Bloggen', href: '/bloggen' },
 ]
 
 
@@ -39,10 +39,10 @@ export default function Header() {
     >
       <div className="container-wide flex items-center justify-between py-3">
         <nav aria-label="Primary" className="hidden md:block">
-          <ul className="flex gap-6 text-xs sm:text-sm">
+          <ul className="flex gap-6 text-xs sm:text-[12px]">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <NavLink to={link.href} className="relative py-1 transition-opacity hover:opacity-60"
+                <NavLink to={link.href} className="relative py-1 transition-opacity hover:opacity-60 uppercase underline"
                 >
                   {link.label}
                 </NavLink>
