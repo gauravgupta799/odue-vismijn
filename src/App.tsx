@@ -7,8 +7,8 @@ import MainLayout from './layouts/MainLayout';
 import Home from "@/pages/Home";
 import Contact from '@/pages/Contact';
 import About from "@/pages/About"
-import Blog from './pages/Blog';
-import Initiatieven from './pages/initiatieven';
+import Blog from '@/pages/Blog';
+import Initiatieven from '@/pages/Initiatieven';
 
 
 function App() {
