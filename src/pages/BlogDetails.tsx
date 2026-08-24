@@ -41,8 +41,8 @@ const BlogDetail = () => {
 
             {/* Hero image + Data */}
             <section className="px-5 sm:px-8 lg:px-0">
-                <div className="mx-auto max-w-[330px] sm:max-w-[520px] lg:max-w-[445px]">
-                    <p className="mb-2 text-[6px] text-[#333333]">
+                <div className="mx-auto max-w-[820px]">
+                    <p className="mb-2 text-[10px] text-[#333333]">
                         Datum: 11 Augustus 2026
                     </p>
 
@@ -50,7 +50,7 @@ const BlogDetail = () => {
                         <img
                         src={heroImage}
                         alt="Waarom een goede plek meer doet"
-                        className="aspect-[1.5] w-full object-cover"
+                        className="aspect-[1.75] w-full object-cover"
                         />
                     </div>
                 </div>
@@ -62,8 +62,8 @@ const BlogDetail = () => {
       {/* =====================================================
           ARTICLE
       ===================================================== */}
-      <article className="px-5 sm:px-8 lg:px-0">
-        <div className="mx-auto max-w-[330px] sm:max-w-[520px]">
+      <article className="px-5 sm:px-8 lg:px-0 mt-20">
+        <div className="mx-auto max-w-[720px]">
           {/* Intro */}
           <ArticleText>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam
@@ -105,7 +105,7 @@ const BlogDetail = () => {
               SECTION 01
           ================================================= */}
           <section className="mt-20 sm:mt-24">
-            <h2 className="text-[14px] font-medium tracking-[-0.02em] sm:text-[16px]">
+            <h2 className="text-[20px] tracking-[-0.02em] leading-[1.25] md:text-[22px] xl:text-[24px] ">
               Ruimte Om Vooruit Te Gaan
             </h2>
 
@@ -129,11 +129,11 @@ const BlogDetail = () => {
               SECTION 02
           ================================================= */}
           <section className="mt-20 sm:mt-24">
-            <h2 className="text-[14px] font-medium tracking-[-0.02em] sm:text-[16px]">
+            <h2 className="text-[20px] tracking-[-0.02em] leading-[1.25] md:text-[22px] xl:text-[24px] ">
               Van Idee Naar Eerste Stap
             </h2>
 
-            <div className="mt-5 overflow-hidden">
+            <div className="mt-8 overflow-hidden">
               <img
                 src={contentImage}
                 alt="Mensen werken samen"
