@@ -2,7 +2,6 @@ import aboutHero from "@/assets/home-banner.png";
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { ActionButton } from '@/components/ActionButton';
 import { Card, CardContent } from '@/components/ui/card';
-// import { Steps } from "@/components/Steps";
 import thinkLogo from "@/assets/think.png";
 import send from "@/assets/send.svg";
 import together from "@/assets/together.svg";
