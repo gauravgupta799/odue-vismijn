@@ -4,12 +4,7 @@ import { useEffect, useState } from 'react';
 import { ActionButton } from '@/components/ActionButton';
 import { cn } from '@/lib/utils';
 import siteLogo  from "@/assets/oude-logo.svg";
-
-// const navLinks = [
-//   { label: 'Home', href: '#home' },
-//   { label: 'Over ons', href: '#overons' },  //about
-//   { label: 'Diensten', href: '#diensten' }, //services
-// ];
+import LanguageDropdown from "@/components/LanguageDropdown";
 
 
 const navLinks = [
@@ -20,10 +15,9 @@ const navLinks = [
 ]
 
 
-
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(true);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -55,9 +49,9 @@ export default function Header() {
         </NavLink>
 
         <div className="flex items-center gap-3 sm:gap-8">
-          <span className="hidden font-display text-xs sm:text-sm md:inline">
-            EN +
-          </span>
+          <div className="hidden md:inline">
+            <LanguageDropdown/>
+          </div>
           <NavLink to="/contact">
               <ActionButton className="hidden md:inline-flex">
               Ontdek Oude Vismijn 1
@@ -70,38 +64,37 @@ export default function Header() {
             onClick={() => setMenuOpen((v) => !v)}
             className="md:hidden"
           >
-            {menuOpen ? (
-              <X className="h-5 w-5" />
-            ) : (
-              <Menu className="h-5 w-5" />
+            {menuOpen ? ( <X className="h-5 w-5" />) : ( <Menu className="h-5 w-5" />
             )}
           </button>
         </div>
       </div>
 
       {menuOpen && (
-        <div className="container-wide">
-          <div className="border-t border-ink/10 bg-cream py-6 md:hidden">
-            <nav aria-label="Mobile">
-              <ul className="flex flex-col gap-4 text-base">
-                {navLinks.map((link) => (
-                  <li key={link.href}>
-                    <NavLink
-                      to={link.href}
-                      onClick={() => setMenuOpen(false)}
-                      className="block py-1"
-                    >
-                      {link.label}
-                    </NavLink>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-            <div className="mt-6">
-              <ActionButton>Ontdek Oude Vismijn 1</ActionButton>
+        <aside className="mobileMenu">
+          <div className="container-wide">
+            <div className="border-t border-ink/10 bg-cream py-6 md:hidden">
+              <nav aria-label="Mobile">
+                <ul className="flex flex-col gap-4 text-base">
+                  {navLinks.map((link) => (
+                    <li key={link.href}>
+                      <NavLink
+                        to={link.href}
+                        onClick={() => setMenuOpen(false)}
+                        className="block py-1"
+                      >
+                        {link.label}
+                      </NavLink>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+              <div className="mt-6">
+                <ActionButton>Ontdek Oude Vismijn 1</ActionButton>
+              </div>
             </div>
           </div>
-        </div>
+        </aside>
       )}
     </header>
   );

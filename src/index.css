@@ -70,6 +70,13 @@ img{
   display: block;
   object-fit:cover;
 }
+.btn-icon{
+  transition: all 0.3s ease;
+}
+
+.btn:hover .btn-icon{
+  transform: rotate(45deg);
+}
 
 
 
