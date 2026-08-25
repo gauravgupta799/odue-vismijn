@@ -67,7 +67,7 @@ const ContactSection = () => {
                                 className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 text-[14px] text-[#454545] transition-all duration-200 ease-in-out
                                 peer-focus:top-0 peer-focus:translate-y-0 peer-focus:text-[12px] peer-[:not(:placeholder-shown)]:top-0 peer-[:not(:placeholder-shown)]:translate-y-0 peer-[:not(:placeholder-shown)]:text-[12px]"
                             >
-                                Voornaam en naam
+                                Voornaam en naam <span className="text-[#5b1111]">*</span>
                             </label>
                         </div>
 
@@ -87,7 +87,7 @@ const ContactSection = () => {
                                     className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 text-[14px] text-[#454545] transition-all duration-200 ease-in-out
                                     peer-focus:top-0 peer-focus:translate-y-0 peer-focus:text-[12px] peer-[:not(:placeholder-shown)]:top-0 peer-[:not(:placeholder-shown)]:translate-y-0 peer-[:not(:placeholder-shown)]:text-[12px]"
                                 >
-                                    E-mailadres
+                                    E-mailadres <span className="text-[#5b1111]">*</span>
                                 </label>
                             </div>
 
@@ -105,7 +105,7 @@ const ContactSection = () => {
                                     className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 text-[14px] text-[#454545] transition-all duration-200 ease-in-out
                                     peer-focus:top-0 peer-focus:translate-y-0 peer-focus:text-[12px] peer-[:not(:placeholder-shown)]:top-0 peer-[:not(:placeholder-shown)]:translate-y-0 peer-[:not(:placeholder-shown)]:text-[12px]"
                                 >
-                                      Telefoonnummer 
+                                      Telefoonnummer <span className="text-[#5b1111]">*</span>
                                 </label>
                             </div>
                         </div>
@@ -124,10 +124,9 @@ const ContactSection = () => {
                                 className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 text-[14px] text-[#454545] transition-all duration-200 ease-in-out
                                 peer-focus:top-0 peer-focus:translate-y-0 peer-focus:text-[12px] peer-[:not(:placeholder-shown)]:top-0 peer-[:not(:placeholder-shown)]:translate-y-0 peer-[:not(:placeholder-shown)]:text-[12px]"
                             >
-                                Vertel ons kort over je idee
+                                Vertel ons kort over je idee <span className="text-[#5b1111]">*</span>
                             </label>
                         </div>
-
 
                         {/* Submit */}
                         <div className="mt-10 md:mt-12 xl:mt-14 flex items-center gap-[4px]">

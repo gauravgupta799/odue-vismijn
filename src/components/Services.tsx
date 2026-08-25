@@ -42,7 +42,7 @@ const services = [
     title: 'Edulogia',
     description:'Edulogia organiseert opleidingen en vormingen voor professionals in mobiliteit en educatie. Oude Vismijn 1 fungeert als ontmoetingsplek voor nieuwe docenten of train-the- trainersessies in kleine groep.',
     icon:edulogia,
-    url:"https://www.edulogia.com/"
+    url:"https://edulogia.be/"
   },
   {
     title: 'My Generation Drive',
@@ -54,19 +54,19 @@ const services = [
     title: 'Minds Wide Open',
     description:'Minds Wide Open werkt als bemiddelaar met families, bedrijven, organisaties, burgers en mensen in hett onderwijs Op Oude Vismijn 1 word je uitgenodigd om te luisteren en te spreken met elkaar zodat er aan een regeling kan gewerkt worden zonder verliezers en winnaars.',
     icon:mindwideopen,
-    url:"https://mindswideopen.org/"
+    url:"https://www.mindswideopen.be/"
   },
   {
     title: 'Zenergy Massage',
     description:'Zenergy biedt (duo-)stoelmassages voor nek, rug en hoofd. Even vertragen in een omgeving waar veel gebeurt. Puur loslaten en genieten.',
     icon:zenergy,
-    url:"https://zenergymassagemov.com/"
+    url:"https://www.zenergybycharlot.be/"
   },
   {
     title: 'Ledscherm Vismijn',
     description:'Aan de straatzijde van Oude Vismijn 1 hangt een groot ledscherm. Gebruikers kunnen hier extra zichtbaarheid krijgen voor hun initiatief, bedrijven krijgne hier een maximale visibiliteit aan een van de toegangspoorten van de stad.',
     icon:ledscherm,
-    url:"https://ledgervision.in/"
+    url:"https://www.vismijnledscherm.be/"
   },
   {
     title: 'Startende ondernemers',
