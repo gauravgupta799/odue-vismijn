@@ -48,8 +48,8 @@ export default function Header() {
           <Logo/>
         </NavLink>
 
-        <div className="flex items-center gap-3 sm:gap-8">
-          <div className="hidden md:inline">
+        <div className="flex items-center gap-2 sm:gap-3 md:gap-4 lg:gap-6 xl:gap-8">
+          <div className="">
             <LanguageDropdown/>
           </div>
           <NavLink to="/contact">
@@ -71,7 +71,7 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <aside className="mobileMenu">
+        <aside className="mobileMenu transition-all duration-500">
           <div className="container-wide">
             <div className="border-t border-ink/10 bg-cream py-6 md:hidden">
               <nav aria-label="Mobile">
