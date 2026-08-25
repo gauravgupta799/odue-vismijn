@@ -176,7 +176,7 @@ const ContactInfo = ({title, value, underline = false, link}: ContactInfoProps) 
       </p>
 
       <a href={link} target="_blank" className={`mt-2 text-[14px] leading-[1.14] text-[#222222] 
-      ${ underline ? "underline underline-offset-2" : "" } cursor-pointer hover:opacity-60 hover:underline`}
+      ${ underline ? "underline underline-offset-2" : "" } cursor-pointer transition-opacity hover:opacity-60 hover:underline`}
       >
         {value}
       </a>

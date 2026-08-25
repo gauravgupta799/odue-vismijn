@@ -17,62 +17,72 @@ const services = [
   {
     title: 'VISIA',
     description:'VISIA brengt mensen samen die nadenken over artificiële intelligentie en de impact ervan op onze samenleving. Tijdens bijeenkomsten delen we inzichten en toepassingen. De centrale vraag: hoe kan AI-technologie de Lokeraar, de Belg of de wereldburger sterker maken?',
-    icon:visia
+    icon:visia,
+    url:""
   },
   {
     title: 'Podcast Vismijn',
     description:'In de Podcast Vismijn krijgen boeiende mensen en boeiende verhalen een podium. De studio op Oude Vismijn 1 biedt een knappe, rustige en professionele setting voor gesprekken die inspireren, verbinden en uitdagen. Je kan het team ook inhuren voor jouw project, ook op verplaatsing.',
-    icon:podVismijn
+    icon:podVismijn,
+    url:"https://www.vismijn.net/"
   },
   {
     title: '2GO Lokeren',
     description:'2GO Lokeren is een vrijwilligersproject dat mensen met minder kansen helpt om hun rijbewijs te behalen. Een rijbewijs opent deuren naar werk en zelfstandigheid. Dit loopt via een buddywerking, volledig op vrijwillige basis,',
-    icon:go
+    icon:go,
+    url:"https://2govzw.be/vestiging/2go-lokeren/"
   },
   {
     title: 'Rijschool Traffix ',
     description:'Op Oude Vismijn 1 vinden vergaderingen en train-the-trainer momenten plaats in het kader van rijopleiding en professionele ontwikkeling.',
-    icon:rijschool
+    icon:rijschool,
+    url:"https://www.traffix.be/"
   },
   {
     title: 'Edulogia',
     description:'Edulogia organiseert opleidingen en vormingen voor professionals in mobiliteit en educatie. Oude Vismijn 1 fungeert als ontmoetingsplek voor nieuwe docenten of train-the- trainersessies in kleine groep.',
-    icon:edulogia
+    icon:edulogia,
+    url:"https://www.edulogia.com/"
   },
   {
     title: 'My Generation Drive',
     description:'My Generation Drive richt zich op bewustwording van bestuurders. Oude Vismijn 1 fungeert als ontmoetingsplek voor nieuwe lesgevers, moderatoren of train-the-trainersessies in kleine groep.',
-    icon:mygendrive
+    icon:mygendrive,
+    url:"https://mygenerationdrive.be/"
   },
   {
     title: 'Minds Wide Open',
     description:'Minds Wide Open werkt als bemiddelaar met families, bedrijven, organisaties, burgers en mensen in hett onderwijs Op Oude Vismijn 1 word je uitgenodigd om te luisteren en te spreken met elkaar zodat er aan een regeling kan gewerkt worden zonder verliezers en winnaars.',
-    icon:mindwideopen
+    icon:mindwideopen,
+    url:"https://mindswideopen.org/"
   },
   {
-    title: 'Zenergy',
+    title: 'Zenergy Massage',
     description:'Zenergy biedt (duo-)stoelmassages voor nek, rug en hoofd. Even vertragen in een omgeving waar veel gebeurt. Puur loslaten en genieten.',
-    icon:zenergy
+    icon:zenergy,
+    url:"https://zenergymassagemov.com/"
   },
   {
     title: 'Ledscherm Vismijn',
     description:'Aan de straatzijde van Oude Vismijn 1 hangt een groot ledscherm. Gebruikers kunnen hier extra zichtbaarheid krijgen voor hun initiatief, bedrijven krijgne hier een maximale visibiliteit aan een van de toegangspoorten van de stad.',
-    icon:ledscherm
+    icon:ledscherm,
+    url:"https://ledgervision.in/"
   },
   {
     title: 'Startende ondernemers',
     description: 'Jonge ondernemers kunnen hier starten. Ze gebruiken de ruimte om klanten te ontvangen, sessies te organiseren en hun idee scherper te maken, met behulp van enkele ervaren klankborden en met visibiliteit op het scherm.',
-    icon:startende
+    icon:startende,
+    url:"https://startendeondernemers.nl/"
   },
 ];
 
 export function Services() {
   return (
-    <section id="diensten" className="bg-ink pb-10 pt-12 text-cream py-20 lg:py-24 lg:px-12 xl:px-16 relative overflow-hidden">
-      <div className="absolute left-0 top-0 h-[12px] w-[56%] bg-[#f1f0eb]" />
-      <div className="absolute right-[14%] top-0 h-[12px] w-[14%] bg-[#f1f0eb]" />
+    <section id="diensten" className="bg-ink  text-cream py-16 sm:py-20 md:py-24 lg:py-28 lg:px-12 relative overflow-hidden">
+      {/* <div className="absolute left-0 top-0 h-[12px] w-[56%] bg-[#f1f0eb]" />
+      <div className="absolute right-[14%] top-0 h-[12px] w-[14%] bg-[#f1f0eb]" /> */}
 
-      <div className="container-wide  lg:px-16 xl:px-20">
+      <div className="container-wide  lg:px-10 xl:px-16">
         <div className="reveal mx-auto max-w-[502px] text-center">
           <h2 className="text-[30px] font-medium leading-[34px] tracking-[-0.36px] sm:text-4xl sm:leading-[44px] ">
             <span className="">Onze initiatieven.</span>
@@ -82,25 +92,21 @@ export function Services() {
           </p>
         </div>
 
-        <div className="mt-12 md:mt-16 grid grid-cols-1 gap-x-[112px] lg:mt-[112px] md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid grid-cols-1 sm:gap-[80px] md:gap-x-[96px] sm:grid-cols-2 xl:grid-cols-3 mt-14 sm:mt-16 md:mt-20 lg:mt-24 xl:mt-[112px]">
           {services.map((service, index) => (
-            <Card
-              key={`${service.title}-${index}`}
+            <Card key={`${service.title}-${index}`}
               className="reveal rounded-none border-0 border-t border-cream/25 py-0 text-cream"
             >
-              <CardContent className="px-0 py-7 pb-[48px]">
+              <CardContent className="px-0 pt-10 pb-10 sm:pb-0 ">
                 <figure className="service-icon mb-4">
-                  <img src={service.icon} alt={service.title} className="img-fluid" />
+                  <img src={service.icon} alt={service.title} className="img-fluid" loading="lazy"/>
                 </figure>
-                {/* <h3 className="text-2xl font-medium leading-9">
-                  {service.title}
-                </h3> */}
-                <p className="mt-1 max-w-[300px] text-sm leading-5">
+                <p className="mt-1 max-w-[320px] text-sm leading-5">
                   {service.description}
                 </p>
-                <div className="my-5">
+                <a href={service.url} className="my-6 inline-block" target="_blank">
                   <ActionButton dark>Meer informatie</ActionButton>
-                </div>
+                </a>
               </CardContent>
             </Card>
           ))}

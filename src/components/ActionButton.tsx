@@ -25,12 +25,7 @@ export function ActionButton({children, dark = false, className, onClick,}: Acti
       <span className="flex min-w-[118px] items-center justify-center px-4">
         {children}
       </span>
-      <span
-        className={cn(
-          'flex h-full w-[33px] items-center justify-center border-l transition-colors duration-300',
-          dark ? 'border-cream/80 group-hover:border-ink' : 'border-white',
-        )}
-      >
+      <span className={cn('flex h-full w-[33px] items-center justify-center border-l transition-colors duration-300', dark ? 'border-cream/80 group-hover:border-ink' : 'border-white', )}>
         <ArrowUpRightIcon className="h-4 w-4" strokeWidth={1.5} />
         {/* <Plus className="h-4 w-4 text-white" strokeWidth={1}/> */}
       </span>

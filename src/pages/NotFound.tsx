@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { ActionButton } from '@/components/ActionButton';
 
 const NotFound = () => {
@@ -33,14 +33,11 @@ const NotFound = () => {
 
               {/* CTA */}
               <div className="mt-8 flex justify-center">
-                <Link
-                  to="/"
-                  className="group flex items-center gap-[4px]"
-                >
+                <NavLink to="/" className="group flex items-center gap-[4px]" >
                   <ActionButton>
                     Terug naar home
                   </ActionButton>
-                </Link>
+                </NavLink>
               </div>
             </div>
           </div>

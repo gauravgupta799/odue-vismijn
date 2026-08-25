@@ -20,10 +20,9 @@ export function Steps() {
           <p className="mt-3 text-sm leading-5">
             Ben je een jonge ondernemer, trainer, coach of initiatiefnemer? Zoek je een plek om klanten te ontvangen of sessies te organiseren? 
           </p>
-
         </div>
 
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-0 mt-12 lg:mt-[101px]">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-0 mt-12 lg:mt-[101px] items-center">
           <div className="col-span-1 lg:col-span-7 reveal">
             <figure className="reveal">
               <img
@@ -34,22 +33,22 @@ export function Steps() {
                 />
             </figure>
           </div>
-          <div className="col-span-1 flex flex-col justify-end lg:col-span-4 lg:col-start-9 reveal">
+          <div className="col-span-1 lg:col-span-4 lg:col-start-9 reveal">
             <p className="mb-4 text-base">Hier krijg je:</p>
-            {steps.map((step, index) => (
-              <button
-                key={step}
-                type="button"
-                className="group flex items-center gap-6 border-b border-ink/15 py-5 text-left text-xl font-medium leading-9 transition-opacity hover:opacity-60"
-              >
-                { 
-                  (index + 1) % 2 != 0 ? 
-                  <img src={send} alt="" className="h-[26px] w-[25px]"/> : 
-                  <img src={together} alt="" className="h-[26px] w-[25px]"/>
-                }
-                {step}
-              </button>
-            ))}
+            <ul className="steps__list">
+              {steps.map((step, index) => (
+                <li key={step}
+                className="flex items-center gap-6 border-b border-ink/15 py-5 text-left text-xl font-medium leading-[1.25]"
+                >
+                  { 
+                    (index + 1) % 2 != 0 ? 
+                    <img src={send} alt="" className="h-[26px] w-[25px]"/> : 
+                    <img src={together} alt="" className="h-[26px] w-[25px]"/>
+                  }
+                  {step}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 

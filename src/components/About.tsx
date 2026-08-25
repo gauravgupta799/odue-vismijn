@@ -1,9 +1,7 @@
 import { ActionButton } from '@/components/ActionButton';
 import { ArrowGlyph } from '@/components/Hero';
 import AiEvening from "@/assets/ai-evenings.webp";
-
-const description =
-  'Oude Vismijn 1 is geen klassiek businesscenter. Hier wordt gewerkt, geleerd, opgenomen, gebouwd en bijgeschaafd. Alles wat hier gebeurt, heeft beweging in zich.';
+import { NavLink } from "react-router-dom";
 
 const aboutPoints = [
   'Een warme en professionele omgeving waar ondernemers, opleiders en sociale initiatieven samenkomen.',
@@ -20,13 +18,15 @@ export function About() {
           <span className="lg:pl-[36px]">Een werkplek met karakter. </span>
           <span>Een ontmoetingsplek met inhoud. </span>
         </h2>
-        <div className="mt-6 pl-0 xl:pl-20">
+        <NavLink to="/overons" className="mt-6 pl-0 xl:pl-20 inline-block">
           <ActionButton>Over Ons</ActionButton>
-        </div>
+        </NavLink>
       </div>
 
       <div className="reveal col-span-1 flex flex-col justify-end gap-6 lg:col-span-4 lg:col-start-9 lg:pt-[9px]">
-        <p className="max-w-[380px] text-sm leading-5">{description}</p>
+        <p className="max-w-[380px] text-sm leading-5">
+          Oude Vismijn 1 is geen klassiek businesscenter. Hier wordt gewerkt, geleerd, opgenomen, gebouwd en bijgeschaafd. Alles wat hier gebeurt, heeft beweging in zich.
+        </p>
       </div>
 
       <div className="reveal col-span-1 pt-4 lg:col-span-7 lg:pt-[64px]">

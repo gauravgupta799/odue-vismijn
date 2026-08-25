@@ -13,7 +13,7 @@ const Blog =()=>{
             What happened recently at Oude Vismijn 1 
         </h2>
         <p className="mt-2 max-w-[400px] leading-[1.25] text-[14px] ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Fusce vehicula, justo.
+            Een plek waar opleidingen doorgaan, podcasts worden opgenomen, AI besproken wordt, sociale projecten groeien en ondernemers hun eerste klanten ontvangen.
         </p>
       </div>
 

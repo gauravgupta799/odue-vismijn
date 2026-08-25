@@ -14,14 +14,13 @@ const About = () => {
             <div className="container-wide">
                 <div className="mx-auto max-w-[480px] mb-14 sm:mb-16 md:mb-20 lg:mb-24 reveal">
                     <span className="text-[12px] uppercase tracking-[0.08em] text-[#5b1111] block mb-4">
-                        About Us
+                        Over Ons
                     </span>
                     <h2 className="text-[32px] md:text-[36px] lg:text-[40px] xl:text-[44px] leading-[48px] tracking-[-0.36px] ">
                         Wat is Oude Vismijn 1?
                     </h2>
                     <p className="mt-2 max-w-[400px] leading-[1.25] text-[14px] ">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Vivamus lacinia odio vitae vestibulum. Fusce vehicula, justo 
+                       Oude Vismijn 1 is geen klassiek businesscenter. Hier wordt gewerkt, geleerd, opgenomen, gebouwd en bijgeschaafd. Alles wat hier gebeurt, heeft beweging in zich.
                     </p>
                 </div>
             </div>

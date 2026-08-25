@@ -1,30 +1,31 @@
 import aboutHero from "@/assets/home-banner.webp";
 import { useScrollReveal } from '@/hooks/useScrollReveal';
-import { ActionButton } from '@/components/ActionButton';
-import { Card, CardContent } from '@/components/ui/card';
+// import { ActionButton } from '@/components/ActionButton';
+// import { Card, CardContent } from '@/components/ui/card';
 import thinkLogo from "@/assets/think.webp";
 import send from "@/assets/send.svg";
 import together from "@/assets/together.svg";
+import { Services } from "@/components/Services";
 
 
-const services = [
-  {
-    title: 'Professionele Ruimte',
-    description:'',
-  },
-  {
-    title: 'Ledscherm Zichtbaarheid',
-    description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Fusce vehicula, justo.',
-  },
-  {
-    title: 'Professionele Ruimte',
-    description:'',
-  },
-  {
-    title: 'Klankbordgesprekken',
-    description:'',
-  },
-];
+// const services = [
+//   {
+//     title: 'Professionele Ruimte',
+//     description:'',
+//   },
+//   {
+//     title: 'Ledscherm Zichtbaarheid',
+//     description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Fusce vehicula, justo.',
+//   },
+//   {
+//     title: 'Professionele Ruimte',
+//     description:'',
+//   },
+//   {
+//     title: 'Klankbordgesprekken',
+//     description:'',
+//   },
+// ];
 
 
 const steps = [
@@ -46,7 +47,7 @@ const Initiatieven = () => {
                         Ruimte voor mensen die iets willen betekenen.
                     </h2>
                     <p className="mt-2 max-w-[480px] leading-[1.35] text-[14px] ">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Fusce vehicula, justo.
+                       Van AI en educatie tot podcasts, welzijn en maatschappelijke impact. Ontdek de projecten die groeien vanuit Oude Vismijn 1.
                     </p>
                 </div>
             </div>
@@ -54,9 +55,11 @@ const Initiatieven = () => {
                 <img src={aboutHero} alt="Oude Vismijn 1" className="img-fluid" />
             </figure>
 
+            <Services/>
 
-            {/* ------- */}
-            <div className="bg-ink pb-10 pt-12 text-cream py-20 lg:py-24 lg:px-12 xl:px-16">
+
+   
+            {/* <div className="bg-ink pb-10 pt-12 text-cream py-20 lg:py-24 lg:px-12 xl:px-16 hidden">
                 <div className="container-wide lg:px-16 xl:px-20">
                     <div className="reveal mx-auto max-w-[502px] text-center">
                         <h2 className="text-[30px] font-medium leading-[34px] tracking-[-0.36px] sm:text-4xl sm:leading-[44px] ">
@@ -84,16 +87,14 @@ const Initiatieven = () => {
                         ))}
                     </div>
                 </div>
-            </div>
-
-            {/*  */}
+            </div> */}
 
             <section className="steps-section pt-20 sm:pt-24 md:pt-28 lg:pt-32 xl:pt-36">
                 <div className="container-wide">
-                    <div className="reveal mx-auto max-w-[430px]">
-                        <h2 className="text-[30px]leading-[34px] tracking-[-0.36px] sm:text-4xl sm:leading-[44px]">
-                            <span className="lg:pl-12 xl:pl-18">Starting here is </span>
-                            <span className="">simpler than you think</span>
+                    <div className="reveal mx-auto max-w-[450px]">
+                        <h2 className="text-[30px] leading-[34px] tracking-[-0.36px] sm:text-4xl sm:leading-[44px]">
+                            <span className="lg:pl-12 xl:pl-18"> Hier beginnen is </span>
+                            <span className="">eenvoudiger dan je denkt.</span>                           
                         </h2>
                         <p className="mt-3 text-sm leading-5">
                             Ben je een jonge ondernemer, trainer, coach of initiatiefnemer? Zoek je een plek om klanten te ontvangen of sessies te organiseren? 

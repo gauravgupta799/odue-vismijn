@@ -10,12 +10,12 @@ const navigationLinks = [
   { label: 'Initiatieven', href: '/initiatieven' },
   { label: 'Bloggen', href: '/bloggen' },
 ]
-const otherLinks = ['Aanbod', 'Bronnen', 'Nieuws & updates'];
+const otherLinks = ['Privacybeleid', 'algemene voorwaarden'];
 
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden bg-ink text-cream mt-8">
-      <div className="container-wide relative py-20 lg:py-24 xl:py-28">
+      <div className="container-wide relative py-20 lg:pt-24 xl:pt-28">
         <div className="reveal grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-0">
           <div className="md:col-span-6">
             <h2 className="max-w-[460px] pl-0 text-[30px] font-medium leading-[34px] tracking-[-0.36px] sm:text-4xl sm:leading-[44px]">         
@@ -24,9 +24,9 @@ export default function Footer() {
             <p className="mt-2 max-w-[427px] text-sm leading-4">
               Ben je een jonge ondernemer, trainer, coach of initiatiefnemer? Zoek je een plek om klanten te ontvangen of sessies te organiseren? Misschien begint jouw idee hier.
             </p>
-            <div className="mt-8">
+            <NavLink to="/contact" className="mt-8 inline-block">
               <ActionButton dark>Ontdek Oude Vismijn 1</ActionButton>
-            </div>
+            </NavLink>
           </div>
 
           <div className="flex lg:justify-end md:col-span-6">
@@ -66,7 +66,7 @@ export default function Footer() {
                 <li key={link}>
                   <a
                     href={`#${link.split(" ").join("").toLowerCase()}`}
-                    className="transition-opacity hover:opacity-60"
+                    className="transition-opacity hover:opacity-60 capitalize"
                   >
                     {link}
                   </a>
@@ -88,7 +88,9 @@ export default function Footer() {
                 info@oudevismijn1.be
               </a>
               <address className="not-italic leading-[32px] mt-2">
-                Oude Vismijn 1, Lokeren, België
+                <a href="https://maps.app.goo.gl/gzzogU2aNdJWUnju8" className="transition-opacity hover:opacity-60" target="_blank">
+                  Oude Vismijn 1, Lokeren, België
+                </a>
               </address>
             </div>
           </section>
