@@ -17,7 +17,7 @@ const navLinks = [
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -90,7 +90,9 @@ export default function Header() {
                 </ul>
               </nav>
               <div className="mt-6">
-                <ActionButton>Ontdek Oude Vismijn 1</ActionButton>
+                <NavLink to="/contact" onClick={() => setMenuOpen(false)}>
+                    <ActionButton>Ontdek Oude Vismijn 1</ActionButton>
+                </NavLink>
               </div>
             </div>
           </div>
