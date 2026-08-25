@@ -2,6 +2,7 @@ import { FormEvent } from "react";
 import contactImage from "../assets/contact.webp";
 import { ActionButton } from '@/components/ActionButton';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
+// import FloatingInput from "@/components/FloatingInput";
 
 const ContactSection = () => {
   useScrollReveal();
@@ -53,80 +54,83 @@ const ContactSection = () => {
                     </div>
 
                     <form onSubmit={handleSubmit} className="mt-12 md:mt-14 lg:mt-16">
-                        {/* Name */}
-                        <div className="border-b border-[#777]">
-                            <label htmlFor="name" className="block pb-2 text-[14px] text-[#454545]"
-                            >
-                                Voornaam en naam <span className="text-[#5b1111]">*</span>
-                            </label>
-
+                        <div className="relative border-b border-[#777] mb-4">
                             <input
                                 id="name"
-                                name="name"
                                 type="text"
-                                required
-                                className="h-5 w-full bg-transparent text-[14px] outline-none"
+                                placeholder=" "
+                                className="peer h-16 w-full bg-transparent text-[14px] outline-none "
                             />
+
+                            <label
+                                htmlFor="name"
+                                className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 text-[14px] text-[#454545] transition-all duration-200 ease-in-out
+                                peer-focus:top-0 peer-focus:translate-y-0 peer-focus:text-[12px] peer-[:not(:placeholder-shown)]:top-0 peer-[:not(:placeholder-shown)]:translate-y-0 peer-[:not(:placeholder-shown)]:text-[12px]"
+                            >
+                                Voornaam en naam
+                            </label>
                         </div>
 
                         {/* Email + Phone */}
-                        <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-3">
-                            <div className="border-b border-[#777]">
-                            <label
-                                htmlFor="email"
-                                className="block pb-2 text-[14px] text-[#454545]"
-                            >
-                                E-mailadres <span className="text-[#5b1111]">*</span>
-                            </label>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-8">
+                            <div className="relative border-b border-[#777] mb-4">
+                                <input
+                                    id="email"
+                                    type="email"
+                                    name="email"
+                                    placeholder=" "
+                                    className="peer h-16 w-full bg-transparent text-[14px] outline-none "
+                                />
 
-                            <input
-                                id="email"
-                                name="email"
-                                type="email"
-                                required
-                                className="h-5 w-full bg-transparent text-[14px] outline-none"
-                            />
+                                <label
+                                    htmlFor="email"
+                                    className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 text-[14px] text-[#454545] transition-all duration-200 ease-in-out
+                                    peer-focus:top-0 peer-focus:translate-y-0 peer-focus:text-[12px] peer-[:not(:placeholder-shown)]:top-0 peer-[:not(:placeholder-shown)]:translate-y-0 peer-[:not(:placeholder-shown)]:text-[12px]"
+                                >
+                                    E-mailadres
+                                </label>
                             </div>
 
-                            <div className="border-b border-[#777]">
-                            <label
-                                htmlFor="phone"
-                                className="block pb-2 text-[14px] text-[#454545]"
-                            >
-                                Telefoonnummer <span className="text-[#5b1111]">*</span>
-                            </label>
+                            <div className="relative border-b border-[#777] mb-4">
+                                <input
+                                    id="phone"
+                                    name="phone"
+                                    type="tel"
+                                    placeholder=" "
+                                    className="peer h-16 w-full bg-transparent text-[14px] outline-none "
+                                />
 
-                            <input
-                                id="phone"
-                                name="phone"
-                                type="tel"
-                                required
-                                className="h-5 w-full bg-transparent text-[14px] outline-none"
-                            />
+                                <label
+                                    htmlFor="phone"
+                                    className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 text-[14px] text-[#454545] transition-all duration-200 ease-in-out
+                                    peer-focus:top-0 peer-focus:translate-y-0 peer-focus:text-[12px] peer-[:not(:placeholder-shown)]:top-0 peer-[:not(:placeholder-shown)]:translate-y-0 peer-[:not(:placeholder-shown)]:text-[12px]"
+                                >
+                                      Telefoonnummer 
+                                </label>
                             </div>
                         </div>
 
-                        {/* Message */}
-                        <div className="mt-7">
-                            <label
-                                htmlFor="message"
-                                className="block pb-2 text-[14px] text-[#454545]"
-                            >
-                            Vertel ons kort over je idee{" "}
-                            <span className="text-[#5b1111]">*</span>
-                            </label>
 
-                            <textarea
+                        <div className="relative border-b border-[#777] mb-4">
+                            <input
                                 id="message"
                                 name="message"
-                                required
-                                rows={4}
-                                className="mt-8 block w-full resize-none border-b border-[#777] bg-transparent text-[14px] outline-none"
+                                placeholder=" "
+                                className="peer h-20 w-full bg-transparent text-[14px] outline-none resize-none"
                             />
+
+                            <label
+                                htmlFor="message"
+                                className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 text-[14px] text-[#454545] transition-all duration-200 ease-in-out
+                                peer-focus:top-0 peer-focus:translate-y-0 peer-focus:text-[12px] peer-[:not(:placeholder-shown)]:top-0 peer-[:not(:placeholder-shown)]:translate-y-0 peer-[:not(:placeholder-shown)]:text-[12px]"
+                            >
+                                Vertel ons kort over je idee
+                            </label>
                         </div>
 
+
                         {/* Submit */}
-                        <div className="mt-8 md:mt-10 xl:mt-12 flex items-center gap-[4px]">
+                        <div className="mt-10 md:mt-12 xl:mt-14 flex items-center gap-[4px]">
                             <ActionButton>
                                 Submit
                             </ActionButton>
@@ -185,3 +189,24 @@ const ContactInfo = ({title, value, underline = false, link}: ContactInfoProps) 
 };
 
 export default ContactSection;
+
+
+
+                        {/* Message */}
+                        {/* <div className="mt-7">
+                            <label
+                                htmlFor="message"
+                                className="block pb-2 text-[14px] text-[#454545]"
+                            >
+                            Vertel ons kort over je idee{" "}
+                            <span className="text-[#5b1111]">*</span>
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                required
+                                rows={4}
+                                className="mt-8 block w-full resize-none border-b border-[#777] bg-transparent text-[14px] outline-none"
+                            />            
+                        </div> */}
