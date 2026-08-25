@@ -3,7 +3,7 @@ import { Hero, HeroImage } from '@/components/Hero';
 import { About } from '@/components/About';
 import { Services } from '@/components/Services';
 import { Steps } from '@/components/Steps';
-import { Gallery } from '@/components/Gallery';
+import Gallery from '@/components/Gallery';
 import { News } from '@/components/News';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import TestimonialSection from '@/components/testimonial';

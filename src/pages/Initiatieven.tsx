@@ -89,7 +89,7 @@ const Initiatieven = () => {
                 </div>
             </div> */}
 
-            <section className="steps-section pt-20 sm:pt-24 md:pt-28 lg:pt-32 xl:pt-36">
+            <section className="steps-section py-16 pb-10 sm:pt-20 md:pt-24 lg:pt-28 xl:pt-32">
                 <div className="container-wide">
                     <div className="reveal mx-auto max-w-[450px]">
                         <h2 className="text-[30px] leading-[34px] tracking-[-0.36px] sm:text-4xl sm:leading-[44px]">

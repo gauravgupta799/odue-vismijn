@@ -14,7 +14,10 @@ const otherLinks = ['Privacybeleid', 'algemene voorwaarden'];
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-ink text-cream mt-8">
+    <footer className="relative overflow-hidden bg-ink text-cream mt-8 ">
+      <div className="absolute left-0 top-0 h-[12px] w-[56%] bg-[#f1f0eb]" />
+      <div className="absolute right-[14%] top-0 h-[12px] w-[14%] bg-[#f1f0eb]" />
+
       <div className="container-wide relative py-20 lg:pt-24 xl:pt-28">
         <div className="reveal grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-0">
           <div className="md:col-span-6">
