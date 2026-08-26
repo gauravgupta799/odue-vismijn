@@ -1,11 +1,15 @@
-import aboutHero from "@/assets/home-banner.webp";
+// import aboutHero from "@/assets/home-banner.webp";
 import { useScrollReveal } from '@/hooks/useScrollReveal';
-// import { ActionButton } from '@/components/ActionButton';
-// import { Card, CardContent } from '@/components/ui/card';
 import thinkLogo from "@/assets/think.webp";
 import send from "@/assets/send.svg";
 import together from "@/assets/together.svg";
 import { Services } from "@/components/Services";
+
+// Images
+import heroMobile from "@/assets/hero-banner-mob.png";
+import heroTablet from "@/assets/hero-banner-md.png";
+import heroDesktop from "@/assets/home-banner.webp";
+
 
 
 const steps = [
@@ -32,7 +36,23 @@ const Initiatieven = () => {
                 </div>
             </div>
             <figure className="w-full overflow-hidden reveal">
-                <img src={aboutHero} alt="Oude Vismijn 1" className="img-fluid" />
+                <picture>
+                    <source
+                        media="(max-width: 639px)"
+                        srcSet={heroMobile}
+                    />
+
+                    <source
+                        media="(max-width: 1023px)"
+                        srcSet={heroTablet}
+                    />
+
+                    <img
+                        src={heroDesktop}
+                        alt="Smiling young man recording a podcast in a cozy home studio"
+                        className="h-full w-full object-cover"
+                    />
+                    </picture>
             </figure>
 
             <Services/>

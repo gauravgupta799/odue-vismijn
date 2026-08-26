@@ -1,4 +1,8 @@
-import aboutHero from "@/assets/aboutImgs/about-hero.webp";
+// Images
+import aboutMobile from "@/assets/aboutImgs/about-banner-mob.webp";
+import aboutTablet from "@/assets/aboutImgs/about-banner-tab.webp";
+import aboutDesktop from "@/assets/aboutImgs/about-hero-banner-desk.webp";
+
 import aboutTeam from "@/assets/aboutImgs/warm.webp";
 import aboutSpace from  "@/assets/aboutImgs/podcast.webp";
 import aboutFist from  "@/assets/aboutImgs/energetic.webp";
@@ -24,9 +28,23 @@ const About = () => {
                     </p>
                 </div>
             </div>
-            <figure className="w-full overflow-hidden reveal">
-                <img src={aboutHero} alt="Oude Vismijn 1" className="img-fluid"/>
-            </figure>
+            <picture className="w-full overflow-hidden reveal">
+                <source
+                    media="(max-width: 639px)"
+                    srcSet={aboutMobile}
+                />
+
+                <source
+                    media="(max-width: 1023px)"
+                    srcSet={aboutTablet}
+                />
+
+                <img
+                    src={aboutDesktop}
+                    alt="Smiling young man recording a podcast in a cozy home studio"
+                    className="h-full w-full object-cover"
+                />
+            </picture>
 
             {/* h-full w-full object-cover object-center h-[250px] sm:h-[360px] md:h-[430px] lg:h-[510px]*/}
 

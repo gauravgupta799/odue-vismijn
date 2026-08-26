@@ -1,4 +1,6 @@
-import heroBanner from "@/assets/home-banner.webp";
+import heroMobile from "@/assets/hero-banner-mob.png";
+import heroTablet from "@/assets/hero-banner-md.png";
+import heroDesktop from "@/assets/home-banner.webp";
 
 
 const description ='Welkom op Oude Vismijn 1 in Lokeren. Dit is de plek waar projecten samenkomen en waar nieuwe ideeën kunnen starten. Soms groeit hier een bedrijf. Soms een samenwerking. Soms gewoon een goed idee dat eindelijk vorm krijgt.';
@@ -24,12 +26,23 @@ export function Hero() {
 
 export function HeroImage() {
   return (
-    <img
-      src={heroBanner}
-      alt="Smiling young man recording a podcast in a cozy home studio"
-      className="reveal img-fluid"
-      loading="eager"
-    />
+    <picture>
+      <source
+        media="(max-width: 639px)"
+        srcSet={heroMobile}
+      />
+
+      <source
+        media="(max-width: 1023px)"
+        srcSet={heroTablet}
+      />
+
+      <img
+        src={heroDesktop}
+        alt="Smiling young man recording a podcast in a cozy home studio"
+        className="h-full w-full object-cover"
+      />
+    </picture>
   );
 }
 
