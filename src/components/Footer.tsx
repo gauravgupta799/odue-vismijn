@@ -15,16 +15,16 @@ const otherLinks = ['Privacybeleid', 'algemene voorwaarden'];
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden bg-ink text-cream mt-8 ">
-      <div className="absolute left-0 top-0 h-[12px] w-[56%] bg-[#f1f0eb]" />
-      <div className="absolute right-[14%] top-0 h-[12px] w-[14%] bg-[#f1f0eb]" />
+        <div className="absolute left-0 top-0  h-[6px] sm:h-[8px] md:h-[10] lgh-[12px] w-[56%] bg-[#f1f0eb]" />
+        <div className="absolute right-[14%] top-0 h-[6px] sm:h-[8px] md:h-[10] lg-h-[12px] w-[14%] bg-[#f1f0eb]" />
 
       <div className="container-wide relative py-20 lg:pt-24 xl:pt-28">
         <div className="reveal grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-0">
           <div className="md:col-span-6">
-            <h2 className="max-w-[460px] pl-0 text-[30px] font-medium leading-[34px] tracking-[-0.36px] sm:text-4xl sm:leading-[44px]">         
+            <h2 className="max-w-[460px] pl-0 text-[28px] sm:text-[30px] md:text-[32px] lg:text-[36px] leading-[1.15] tracking-[-0.36px]">         
               <span className="lg:pl-[52px] xl:pl-[60px]">Wil jij hier iets starten?</span>
             </h2>
-            <p className="mt-2 max-w-[427px] text-sm leading-4">
+            <p className="mt-3 max-w-[427px] text-sm leading-5">
               Ben je een jonge ondernemer, trainer, coach of initiatiefnemer? Zoek je een plek om klanten te ontvangen of sessies te organiseren? Misschien begint jouw idee hier.
             </p>
             <NavLink to="/contact" className="mt-8 inline-block">

@@ -14,7 +14,7 @@ export function Steps() {
     <section className="steps-section py-20 sm:py-24 md:py-28 lg:py-32 xl:py-36 lg:px-12 xl:px-16">
       <div className="container-wide">
         <div className="reveal mx-auto max-w-[460px] text-center">
-          <h2 className="text-[30px] font-medium leading-[34px] tracking-[-0.36px] sm:text-4xl sm:leading-[44px]">
+          <h2 className="text-[28px] sm:text-[30px] md:text-[32px] lg:text-[36px] leading-[1.15] tracking-[-0.36px]">
             <span>Wil jij hier iets starten? </span> 
           </h2>
           <p className="mt-3 text-sm leading-5">

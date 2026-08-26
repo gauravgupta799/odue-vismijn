@@ -8,26 +8,6 @@ import together from "@/assets/together.svg";
 import { Services } from "@/components/Services";
 
 
-// const services = [
-//   {
-//     title: 'Professionele Ruimte',
-//     description:'',
-//   },
-//   {
-//     title: 'Ledscherm Zichtbaarheid',
-//     description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Fusce vehicula, justo.',
-//   },
-//   {
-//     title: 'Professionele Ruimte',
-//     description:'',
-//   },
-//   {
-//     title: 'Klankbordgesprekken',
-//     description:'',
-//   },
-// ];
-
-
 const steps = [
   'Een warme en professionele locatie  ',
   'Een klankbord wanneer nodig  ',
@@ -43,10 +23,10 @@ const Initiatieven = () => {
         <section className="initiatieven py-14 md:py-16 lg:py-20 xl:py-24">
             <div className="container-wide">
                 <div className="mx-auto max-w-[500px] mb-14 sm:mb-16 md:mb-20 lg:mb-24 reveal">
-                    <h2 className="text-[32px] md:text-[36px] lg:text-[40px] xl:text-[44px] leading-[48px] tracking-[-0.36px] ">
+                    <h1 className="text-[32px] md:text-[36px] lg:text-[40px] xl:text-[44px] leading-[1.1] tracking-[-0.36px]">
                         Ruimte voor mensen die iets willen betekenen.
-                    </h2>
-                    <p className="mt-2 max-w-[480px] leading-[1.35] text-[14px] ">
+                    </h1>
+                    <p className="mt-3 max-w-[480px] leading-[1.35] text-[14px] ">
                        Van AI en educatie tot podcasts, welzijn en maatschappelijke impact. Ontdek de projecten die groeien vanuit Oude Vismijn 1.
                     </p>
                 </div>
@@ -92,7 +72,7 @@ const Initiatieven = () => {
             <section className="steps-section py-16 pb-10 sm:pt-20 md:pt-24 lg:pt-28 xl:pt-32">
                 <div className="container-wide">
                     <div className="reveal mx-auto max-w-[450px]">
-                        <h2 className="text-[30px] leading-[34px] tracking-[-0.36px] sm:text-4xl sm:leading-[44px]">
+                        <h2 className="text-[28px] sm:text-[30px] md:text-[32px] lg:text-[36px] leading-[1.15] tracking-[-0.36px]">
                             <span className="lg:pl-12 xl:pl-18"> Hier beginnen is </span>
                             <span className="">eenvoudiger dan je denkt.</span>                           
                         </h2>

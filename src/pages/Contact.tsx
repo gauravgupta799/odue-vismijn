@@ -20,40 +20,36 @@ const ContactSection = () => {
         <div className="container-wide">
             {/* Heading */}
             <div className="reveal mx-auto max-w-[464px]">
-                <h1 className="text-[32px] leading-[1.1] sm:text-[36px] md:text-[40px] lg:text-[44px] tracking-[-0.04em] capitalize ">
+                <h1 className="text-[32px] md:text-[36px] lg:text-[40px] xl:text-[44px] leading-[1.1] tracking-[-0.36px] ">
                     Het begint altijd met een gesprek.
                 </h1>
 
-                <p className="mt-2 max-w-[400px] leading-[1.25] text-[14px] ">
+                <p className="mt-3 max-w-[400px] leading-[1.25] text-[14px] ">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Fusce vehicula, justo;
                 </p>
             </div>
 
             {/* Main content */}
-            <div className="grid md:grid-cols-2 md:items-start gap-12 md:gap-14 lg:gap-16 xl:gap:-[112] mt-12 sm:mt-14 md:mt-16 lg:mt-20 xl:mt-24 reveal">
+            <div className="grid md:grid-cols-2 gap-12 md:gap-14 lg:gap-16 xl:gap:-[112] mt-12 sm:mt-14 md:mt-16 lg:mt-20 xl:mt-24 reveal items-center">
                 {/* Image */}
                 <div className="w-full max-w-[500px]">
                     <figure className=" overflow-hidden">
-                        <img
-                            src={contactImage}
-                            alt="Ons kantoor"
-                            className="h-full w-full object-cover max-w-[100%]"
-                        />
+                        <img src={contactImage} alt="Ons kantoor" className="img-fluid" />
                     </figure>
                 </div>
 
                 {/* Contact form */}
                 <div className="w-full max-w-[620px]">
                     <div>
-                        <h2 className="text-[20px] md:text-[22px] lg:text-[24px] leading-[1.5] tracking-[-0.02em]">
+                        <h2 className="text-[20px] md:text-[22px] lg:text-[24px] leading-[1.15] tracking-[-0.02em]">
                             Vertel Ons Wat Je Nodig Hebt
                         </h2>
-                        <p className="mt-1 text-[14px] leading-[1.3]">
+                        <p className="mt-2 text-[14px] leading-[1.3]">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                         </p>
                     </div>
 
-                    <form onSubmit={handleSubmit} className="mt-12 md:mt-14 lg:mt-16">
+                    <form onSubmit={handleSubmit} className="mt-6 sm:mt-8 md:mt-10 lg:mt-12 xl:mt-14">
                         <div className="relative border-b border-[#777] mb-4">
                             <input
                                 id="name"
@@ -139,7 +135,7 @@ const ContactSection = () => {
             </div>
 
             {/* Contact information */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-6  mt-14 md:mt-16 lg:mt-20">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-6 mt-16 md:mt-20 lg:mt-24">
                 <ContactInfo
                     title="E-MAILADRES"
                     value="info@oudevismijn1.be"

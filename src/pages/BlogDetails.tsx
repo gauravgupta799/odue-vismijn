@@ -13,10 +13,8 @@ const BlogDetail = () => {
             <section className="pb-10 pt-16 sm:pt-20 lg:px-0 lg:pb-12 lg:pt-[72px]">
                 <div className="mx-auto max-w-[1400px]">
                     <div className="mx-auto max-w-[620px]">
-                        <h1 className="text-[32px] leading-[1.05] tracking-[-0.04em] sm:text-[34px] md:text-[36px] lg:text-[40px] xl:text-[44px]">
-                            Waarom Een Goede Plek
-                            Meer Doet Dan Alleen
-                            Ruimte Bieden
+                        <h1 className="text-[32px] md:text-[36px] lg:text-[40px] xl:text-[44px] leading-[1.1] tracking-[-0.36px]">
+                            Waarom Een Goede Plek Meer Doet Dan Alleen Ruimte Bieden
                         </h1>
 
                         {/* Author */}
@@ -99,7 +97,7 @@ const BlogDetail = () => {
                     SECTION 01
                 ================================================= */}
                 <section className="mt-20 sm:mt-24">
-                    <h2 className="text-[20px] tracking-[-0.02em] leading-[1.25] md:text-[22px] xl:text-[24px] mb-4">
+                    <h2 className="text-[24px] tracking-[-0.02em] leading-[1.25] md:text-[26px] xl:text-[28px] mb-4">
                         Ruimte Om Vooruit Te Gaan
                     </h2>
 
@@ -123,7 +121,7 @@ const BlogDetail = () => {
                     SECTION 02
                 ================================================= */}
                 <section className="mt-20 sm:mt-24">
-                    <h2 className="text-[20px] tracking-[-0.02em] leading-[1.25] md:text-[22px] xl:text-[24px] ">
+                    <h2 className="text-[24px] tracking-[-0.02em] leading-[1.25] md:text-[26px] xl:text-[28px] ">
                         Van Idee Naar Eerste Stap
                     </h2>
 
@@ -157,11 +155,7 @@ const BlogDetail = () => {
                 <section className="mt-14 border-t border-[#d6d4ce] pt-9 sm:mt-16 sm:pt-10">
                     <div className="flex items-center gap-4">
                     <div className="h-[80px] w-[80px] shrink-0 overflow-hidden rounded-full">
-                        <img
-                        src={authorImage}
-                        alt="Bert"
-                        className="h-full w-full object-cover"
-                        />
+                        <img src={authorImage} alt="Bert" className="img-fluid" loading="lazy" />
                     </div>
 
                     <div>
@@ -180,31 +174,31 @@ const BlogDetail = () => {
             </article>
 
             {/* Related Articles */}
-            <section className="pb-20 pt-24 sm:pb-24 sm:pt-28 lg:pt-[110px]">
-                <div className="mx-auto max-w-[1180px] ">
-                <h2 className="text-[26px] md:text-[30px] lg:text-[32px] xl:text-[36px] leading-[48px] tracking-[-0.36px]">
-                    Gerelateerde artikelen
-                </h2>
+            <section className="related-articles pb-20 pt-24 sm:pb-24 sm:pt-28 lg:pt-[110px]">
+                <div className="mx-auto">
+                    <h2 className="text-[28px] sm:text-[30px] md:text-[32px] lg:text-[36px] leading-[1.15] tracking-[-0.36px]">
+                        Gerelateerde artikelen
+                    </h2>
 
-                <div className="mt-9 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">
-                    <RelatedArticleCard
-                    image={heroImage}
-                    date="JUNE 2025"
-                    title="Podcast Vismijn — nieuwe episode live"
-                    />
+                    <div className="mt-9 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 sm:gap-10 md:gap-8 lg:gap-6">
+                        <RelatedArticleCard
+                        image={heroImage}
+                        date="JUNE 2025"
+                        title="Podcast Vismijn — nieuwe episode live"
+                        />
 
-                    <RelatedArticleCard
-                    image={heroImage}
-                    date="JUNE 2025"
-                    title="Podcast Vismijn — nieuwe episode live"
-                    />
+                        <RelatedArticleCard
+                        image={heroImage}
+                        date="JUNE 2025"
+                        title="Podcast Vismijn — nieuwe episode live"
+                        />
 
-                    <RelatedArticleCard
-                    image={heroImage}
-                    date="JUNE 2025"
-                    title="Welkom — een nieuwe starter is arrived"
-                    />
-                </div>
+                        <RelatedArticleCard
+                        image={heroImage}
+                        date="JUNE 2025"
+                        title="Welkom — een nieuwe starter is arrived"
+                        />
+                    </div>
                 </div>
             </section>
 

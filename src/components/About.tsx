@@ -14,7 +14,7 @@ export function About() {
     <section id="overons"
       className="container-wide lg:px-12 xl:px-16 relative grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-0 py-20 sm:py-24 md:py-28 lg:py-32 xl:py-36">
       <div className="reveal col-span-1 lg:col-span-7">
-        <h2 className="max-w-[635px] pl-0 text-[30px] font-medium leading-[34px] tracking-[-0.36px] sm:text-4xl sm:leading-[44px] xl:pl-20">
+        <h2 className="max-w-[635px] pl-0 xl:pl-20 text-[28px] sm:text-[30px] md:text-[32px] lg:text-[36px] leading-[1.15] tracking-[-0.36px]">
           <span className="lg:pl-[36px]">Een werkplek met karakter. </span>
           <span>Een ontmoetingsplek met inhoud. </span>
         </h2>

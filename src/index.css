@@ -91,7 +91,7 @@ img{
     margin-inline: 16px; 
   }
 
-  @media (min-width: 496px) {
+  @media (min-width: 576px) {
     .container-wide {
       max-width: auto;
       margin-inline:20px;
@@ -100,7 +100,7 @@ img{
  
   @media (min-width: 768px) {
     .container-wide {
-      max-width: 720px;
+      max-width:calc(768px - 20px);
       margin-inline:auto;
     }
   }
@@ -111,12 +111,12 @@ img{
   }
   @media (min-width: 1200px) {
     .container-wide {
-      max-width:calc(1200px - 48px);
+      max-width:calc(1200px - 44px);
     }
   }
   @media (min-width: 1400px) {
     .container-wide {
-      max-width: calc(1440px - 120px);
+      max-width: calc(1440px - 90px);
     }
   }
 

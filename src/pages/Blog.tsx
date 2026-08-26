@@ -9,10 +9,10 @@ const Blog =()=>{
     return (
     <section className="container-wide py-14 md:py-16 lg:py-20 xl:py-24">
       <div className="reveal mx-auto max-w-[500px]">
-        <h2 className="text-[32px] md:text-[36px] lg:text-[40px] xl:text-[44px] leading-[48px] tracking-[-0.36px]">
+        <h1 className="text-[32px] md:text-[36px] lg:text-[40px] xl:text-[44px] leading-[1.1] tracking-[-0.36px]">
             What happened recently at Oude Vismijn 1 
-        </h2>
-        <p className="mt-2 max-w-[400px] leading-[1.25] text-[14px] ">
+        </h1>
+        <p className="mt-3 max-w-[400px] leading-[1.25] text-[14px] ">
             Een plek waar opleidingen doorgaan, podcasts worden opgenomen, AI besproken wordt, sociale projecten groeien en ondernemers hun eerste klanten ontvangen.
         </p>
       </div>
@@ -38,7 +38,7 @@ const Blog =()=>{
               <p className="mt-4 font-instrument text-xs leading-6">
                 {item.date}
               </p>
-              <p className="mt-1 text-[16px] md:text-xl font-normal leading:4 md:leading-6">
+              <p className="mt-1 text-[16px] md:text-xl font-normal leading:5 md:leading-6">
                 <NavLink to="/bloggendetail" className="hover:text-black/75 hover:underline">
                   {item.title}
                 </NavLink>

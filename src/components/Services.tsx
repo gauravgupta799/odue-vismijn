@@ -84,10 +84,10 @@ export function Services() {
 
       <div className="container-wide  lg:px-10 xl:px-16">
         <div className="reveal mx-auto max-w-[502px] text-center">
-          <h2 className="text-[30px] font-medium leading-[34px] tracking-[-0.36px] sm:text-4xl sm:leading-[44px] ">
+          <h2 className="text-[28px] sm:text-[30px] md:text-[32px] lg:text-[36px] leading-[1.15] tracking-[-0.36px]">
             <span className="">Onze initiatieven.</span>
           </h2>
-          <p className="mt-4 max-w-[427px] text-sm leading-5 mx-auto">
+          <p className="mt-3 max-w-[427px] text-sm leading-5 mx-auto">
             Van AI en educatie tot podcasts, welzijn en maatschappelijke impact. Ontdek de projecten die groeien vanuit Oude Vismijn 1.
           </p>
         </div>

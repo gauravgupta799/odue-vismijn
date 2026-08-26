@@ -16,10 +16,10 @@ const About = () => {
                     <span className="text-[12px] uppercase tracking-[0.08em] text-[#5b1111] block mb-4">
                         Over Ons
                     </span>
-                    <h2 className="text-[32px] md:text-[36px] lg:text-[40px] xl:text-[44px] leading-[48px] tracking-[-0.36px] ">
+                    <h1 className="text-[32px] md:text-[36px] lg:text-[40px] xl:text-[44px] leading-[1.1] tracking-[-0.36px]">
                         Wat is Oude Vismijn 1?
-                    </h2>
-                    <p className="mt-2 max-w-[400px] leading-[1.25] text-[14px] ">
+                    </h1>
+                    <p className="mt-3 max-w-[400px] leading-[1.25] text-[14px] ">
                        Oude Vismijn 1 is geen klassiek businesscenter. Hier wordt gewerkt, geleerd, opgenomen, gebouwd en bijgeschaafd. Alles wat hier gebeurt, heeft beweging in zich.
                     </p>
                 </div>
@@ -33,7 +33,7 @@ const About = () => {
             <section className="pt-20 sm:pt-24 md:pt-28 lg:py-[112px] pb-8">
                 <div className="container-wide">
                     <div className="mx-auto max-w-[440px] mb-14 sm:mb-16 md:mb-20 lg:mb-24 xl:mb-28 reveal">
-                        <h2 className="text-[28px] sm:text-[30px] md:text-[32px] lg:text-[36px] leading-[1.2] tracking-[-0.36px]">
+                        <h2 className="text-[28px] sm:text-[30px] md:text-[32px] lg:text-[36px] leading-[1.15] tracking-[-0.36px]">
                             <span>Voor mensen die iets willen starten</span> 
                         </h2>
                         <p className="mt-2 text-sm leading-5">
@@ -91,27 +91,27 @@ const About = () => {
 
             {/* Dark Information */}
             <section className="relative overflow-hidden bg-[#2b0505] py-20 text-white sm:py-28 lg:py-[110px] reveal">
-                <div className="absolute left-0 top-0 h-[12px] w-[56%] bg-[#f1f0eb]" />
-                <div className="absolute right-[14%] top-0 h-[12px] w-[14%] bg-[#f1f0eb]" />
+                <div className="absolute left-0 top-0  h-[6px] sm:h-[8px] md:h-[10] lgh-[12px] w-[56%] bg-[#f1f0eb]" />
+                <div className="absolute right-[14%] top-0 h-[6px] sm:h-[8px] md:h-[10] lg-h-[12px] w-[14%] bg-[#f1f0eb]" />
 
                 <div className="container-wide">
                     <div className="mx-auto max-w-[1180px]">
                         <div className="mx-auto max-w-[440px] mb-14 sm:mb-16 md:mb-20 lg:mb-24 xl:mb-28 reveal">
-                            <h2 className="text-[28px] sm:text-[30px] md:text-[32px] lg:text-[36px] leading-[1.2] tracking-[-0.36px]">
+                            <h2 className="text-[28px] sm:text-[30px] md:text-[32px] lg:text-[36px] leading-[1.15] tracking-[-0.36px]">
                                 Voor mensen die iets
                                 willen starten
                             </h2>
-                            <p className="mt-2 text-sm leading-5">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Fusce vehicula, justo.
+                            <p className="mt-3 text-sm leading-5">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Fusce vehicula, justo.
                             </p>
                         </div>
 
                         <div className="mx-auto max-w-[720px] mt-12 grid gap-8 sm:grid-cols-2 sm:gap-16">
-                            <p className="text-[12px] leading-[1.5] text-white/75 reveal">
+                            <p className="text-[12px] leading-[1.5] text-white/90 reveal">
                                 Oude Vismijn 1 is ontstaan vanuit een eenvoudig idee: wat als je een plek creëert waar verschillende initiatieven samenkomen, zonder dat ze elkaar in de weg zitten?
                             </p>
 
-                            <p className="text-[12px] leading-[1.5] text-white/75 reveal">
+                            <p className="text-[12px] leading-[1.5] text-white/90 reveal">
                                 Een plek waar opleidingen doorgaan, podcasts worden opgenomen, AI besproken wordt, sociale projecten groeien en ondernemers hun eerste klanten ontvangen.
                             </p>
                         </div>
@@ -158,7 +158,7 @@ const AboutFeature = ({title, description, image, imageAlt, imagePosition,}: Abo
           {title}
         </h3>
 
-        <p className="mt-2 max-w-[480px] leading-[1.25] text-[12px] ">
+        <p className="mt-3 max-w-[480px] leading-[1.25] text-[14px] ">
           {description}
         </p>
       </div>
@@ -166,8 +166,8 @@ const AboutFeature = ({title, description, image, imageAlt, imagePosition,}: Abo
   );
 
   return (
-    <div className="pb-12 sm:pb-16 md:pb-20  lg:pb-24 xl:pb-28">
-        <div className={`mx-auto flex max-w-[1400px] flex-col md:flex-row md:items-center md:justify-between gap-8 sm:gap-10 md:gap-12 lg:gap-14 ${ imagePosition === "left" ? "" : "md:flex-row-reverse" }`}
+    <div className="pb-14 sm:pb-16 md:pb-20  lg:pb-24 xl:pb-28">
+        <div className={`mx-auto flex max-w-[1400px] flex-col md:flex-row md:items-center md:justify-between gap-6 sm:gap-8 md:gap-10 lg:gap-12 ${ imagePosition === "left" ? "" : "md:flex-row-reverse" }`}
         >
             {imageElement}
             {textElement}
