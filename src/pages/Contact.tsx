@@ -1,19 +1,20 @@
-import { FormEvent } from "react";
+// import { FormEvent } from "react";
 import contactImage from "../assets/contact.webp";
-import { ActionButton } from '@/components/ActionButton';
+// import { ActionButton } from '@/components/ActionButton';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 // import FloatingInput from "@/components/FloatingInput";
+import ContactForm from "@/components/ContactForm";
 
 const ContactSection = () => {
   useScrollReveal();
     
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+//   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+//     event.preventDefault();
 
-    // Handle your form submission here
-    console.log("Form submitted");
-  };
+//     // Handle your form submission here
+//     console.log("Form submitted");
+//   };
 
   return (
       <section className="contact py-14 md:py-16 lg:py-20 xl:py-24">
@@ -49,88 +50,7 @@ const ContactSection = () => {
                         </p>
                     </div>
 
-                    <form onSubmit={handleSubmit} className="mt-6 sm:mt-8 md:mt-10 lg:mt-12 xl:mt-14">
-                        <div className="relative border-b border-[#777] mb-4">
-                            <input
-                                id="name"
-                                type="text"
-                                placeholder=" "
-                                className="peer h-16 w-full bg-transparent text-[14px] outline-none "
-                            />
-
-                            <label
-                                htmlFor="name"
-                                className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 text-[14px] text-[#454545] transition-all duration-200 ease-in-out
-                                peer-focus:top-0 peer-focus:translate-y-0 peer-focus:text-[12px] peer-[:not(:placeholder-shown)]:top-0 peer-[:not(:placeholder-shown)]:translate-y-0 peer-[:not(:placeholder-shown)]:text-[12px]"
-                            >
-                                Voornaam en naam <span className="text-[#5b1111]">*</span>
-                            </label>
-                        </div>
-
-                        {/* Email + Phone */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-8">
-                            <div className="relative border-b border-[#777] mb-4">
-                                <input
-                                    id="email"
-                                    type="email"
-                                    name="email"
-                                    placeholder=" "
-                                    className="peer h-16 w-full bg-transparent text-[14px] outline-none "
-                                />
-
-                                <label
-                                    htmlFor="email"
-                                    className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 text-[14px] text-[#454545] transition-all duration-200 ease-in-out
-                                    peer-focus:top-0 peer-focus:translate-y-0 peer-focus:text-[12px] peer-[:not(:placeholder-shown)]:top-0 peer-[:not(:placeholder-shown)]:translate-y-0 peer-[:not(:placeholder-shown)]:text-[12px]"
-                                >
-                                    E-mailadres <span className="text-[#5b1111]">*</span>
-                                </label>
-                            </div>
-
-                            <div className="relative border-b border-[#777] mb-4">
-                                <input
-                                    id="phone"
-                                    name="phone"
-                                    type="tel"
-                                    placeholder=" "
-                                    className="peer h-16 w-full bg-transparent text-[14px] outline-none "
-                                />
-
-                                <label
-                                    htmlFor="phone"
-                                    className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 text-[14px] text-[#454545] transition-all duration-200 ease-in-out
-                                    peer-focus:top-0 peer-focus:translate-y-0 peer-focus:text-[12px] peer-[:not(:placeholder-shown)]:top-0 peer-[:not(:placeholder-shown)]:translate-y-0 peer-[:not(:placeholder-shown)]:text-[12px]"
-                                >
-                                      Telefoonnummer <span className="text-[#5b1111]">*</span>
-                                </label>
-                            </div>
-                        </div>
-
-
-                        <div className="relative border-b border-[#777] mb-4">
-                            <input
-                                id="message"
-                                name="message"
-                                placeholder=" "
-                                className="peer h-20 w-full bg-transparent text-[14px] outline-none resize-none"
-                            />
-
-                            <label
-                                htmlFor="message"
-                                className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 text-[14px] text-[#454545] transition-all duration-200 ease-in-out
-                                peer-focus:top-0 peer-focus:translate-y-0 peer-focus:text-[12px] peer-[:not(:placeholder-shown)]:top-0 peer-[:not(:placeholder-shown)]:translate-y-0 peer-[:not(:placeholder-shown)]:text-[12px]"
-                            >
-                                Vertel ons kort over je idee <span className="text-[#5b1111]">*</span>
-                            </label>
-                        </div>
-
-                        {/* Submit */}
-                        <div className="mt-10 md:mt-12 xl:mt-14 flex items-center gap-[4px]">
-                            <ActionButton>
-                                Submit
-                            </ActionButton>
-                        </div>
-                    </form>
+                    <ContactForm/>
                 </div>
             </div>
 
@@ -187,21 +107,79 @@ export default ContactSection;
 
 
 
-                        {/* Message */}
-                        {/* <div className="mt-7">
-                            <label
-                                htmlFor="message"
-                                className="block pb-2 text-[14px] text-[#454545]"
-                            >
-                            Vertel ons kort over je idee{" "}
-                            <span className="text-[#5b1111]">*</span>
-                            </label>
 
-                            <textarea
-                                id="message"
-                                name="message"
-                                required
-                                rows={4}
-                                className="mt-8 block w-full resize-none border-b border-[#777] bg-transparent text-[14px] outline-none"
-                            />            
-                        </div> */}
+ {/* <form onSubmit={handleSubmit} className="mt-6 sm:mt-8 md:mt-10 lg:mt-12 xl:mt-14">
+        <div className="relative border-b border-[#777] mb-4">
+            <input
+                id="name"
+                type="text"
+                placeholder=" "
+                className="peer h-16 w-full bg-transparent text-[14px] outline-none "
+            />
+            <label
+                htmlFor="name"
+                className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 text-[14px] text-[#454545] transition-all duration-200 ease-in-out
+                peer-focus:top-0 peer-focus:translate-y-0 peer-focus:text-[12px] peer-[:not(:placeholder-shown)]:top-0 peer-[:not(:placeholder-shown)]:translate-y-0 peer-[:not(:placeholder-shown)]:text-[12px]"
+            >
+                Voornaam en naam <span className="text-[#5b1111]">*</span>
+            </label>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-8">
+            <div className="relative border-b border-[#777] mb-4">
+                <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder=" "
+                    className="peer h-16 w-full bg-transparent text-[14px] outline-none "
+                />
+                <label
+                    htmlFor="email"
+                    className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 text-[14px] text-[#454545] transition-all duration-200 ease-in-out
+                    peer-focus:top-0 peer-focus:translate-y-0 peer-focus:text-[12px] peer-[:not(:placeholder-shown)]:top-0 peer-[:not(:placeholder-shown)]:translate-y-0 peer-[:not(:placeholder-shown)]:text-[12px]"
+                >
+                    E-mailadres <span className="text-[#5b1111]">*</span>
+                </label>
+            </div>
+
+            <div className="relative border-b border-[#777] mb-4">
+                <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    placeholder=" "
+                    className="peer h-16 w-full bg-transparent text-[14px] outline-none "
+                />
+                <label
+                    htmlFor="phone"
+                    className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 text-[14px] text-[#454545] transition-all duration-200 ease-in-out
+                    peer-focus:top-0 peer-focus:translate-y-0 peer-focus:text-[12px] peer-[:not(:placeholder-shown)]:top-0 peer-[:not(:placeholder-shown)]:translate-y-0 peer-[:not(:placeholder-shown)]:text-[12px]"
+                >
+                        Telefoonnummer <span className="text-[#5b1111]">*</span>
+                </label>
+            </div>
+        </div>
+
+        <div className="relative border-b border-[#777] mb-4">
+            <input
+                id="message"
+                name="message"
+                placeholder=" "
+                className="peer h-20 w-full bg-transparent text-[14px] outline-none resize-none"
+            />
+            <label
+                htmlFor="message"
+                className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 text-[14px] text-[#454545] transition-all duration-200 ease-in-out
+                peer-focus:top-0 peer-focus:translate-y-0 peer-focus:text-[12px] peer-[:not(:placeholder-shown)]:top-0 peer-[:not(:placeholder-shown)]:translate-y-0 peer-[:not(:placeholder-shown)]:text-[12px]"
+            >
+                Vertel ons kort over je idee <span className="text-[#5b1111]">*</span>
+            </label>
+        </div>
+
+        <div className="mt-10 md:mt-12 xl:mt-14 flex items-center gap-[4px]">
+            <ActionButton>
+                Submit
+            </ActionButton>
+        </div>
+    </form> */}
